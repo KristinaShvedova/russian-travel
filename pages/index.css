@@ -164,3 +164,124 @@ line-height: 18px;
 color: #FFFFFF;
 list-style: none;
 }
+
+.photo-grid {
+    border: 2px solid red;
+    margin: 92px 0px 0px 0px;
+    display: grid;
+    /*создали 4 колонки*/
+    grid-template-columns: repeat(4, 284px);
+    /*отступы для колонок*/
+    column-gap: 16px;
+    /*три ряда*/
+    grid-template-rows: repeat(3,213px);
+    /*отступы для рядов*/
+    row-gap: 16px; 
+    /*ОШИБКА у последнего ряда занулить margin-bottom*/
+    overflow: hidden;
+}
+.photo-grid__item {
+width: 284px;
+height: 213px;
+display: inline-grid;
+margin-right: 48px;
+margin-left: 48px;;
+}
+
+.cards {
+border: 2px red solid;
+margin-top: 12px;
+}
+.cards__item {
+border: 2px green solid;
+list-style: none;
+padding: 0px;
+display: grid;
+/*создали 2 колонки*/
+grid-template-columns: 460px, 524px;
+/*отступы для колонок*/
+column-gap: 40px;
+/*три ряда*/
+grid-template-rows: repeat(5, 460px) orange solid;
+}
+.cards__title {
+position: relative;
+width: 460px;
+height: 152px;
+margin-top: 80px; /*у всех карточек расстояние сверху от текста до фотки*/
+margin-bottom: 0px;
+margin-left: 148px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 76px;
+/* or 106% */
+color: #FFFFFF;
+}
+.cards__image {
+    position: relative;
+    width: 460px;
+    height: 460px;
+    margin-top: 48px; /*у всех карточек расстояние снизу от текста до фотки*/
+    margin-bottom: 0px;
+    margin-left: 148px;
+display: inline-grid;
+border: 2px solid white;
+}
+.cards__website {
+    position: relative;
+    margin-top: 198px;
+    margin-right: 176px;
+    margin-bottom: 0px;
+    margin-left: 648px;
+}
+.cards__website__url-heading {
+    /*position: relative;
+    width: 456px;
+    height: 12px;
+    margin-top: 106px;
+    margin-right: 176px;
+    margin-left: 648px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    /* or 20px */
+    letter-spacing: 2px;
+    color: #AAAAAA;*/
+}
+.cards__website__link {
+   /* position: relative;
+    width: 456px;
+    height: 22px;
+    margin-top: 222px;
+    margin-left: 648px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    text-decoration-line: underline;
+    color: #FFFFFF;*/
+}
+.cards__paragraph {
+    /*display: inline-grid;
+    border: 2px solid green;*/
+position: relative;
+width: 484px;
+height: 145px;
+margin-top: 292px;
+margin-right: 148px;
+margin-bottom: 0px;
+margin-left: 648px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 163%;
+/* or 29px */
+color: #FFFFFF;
+}
