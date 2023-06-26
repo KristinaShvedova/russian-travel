@@ -188,27 +188,40 @@ margin-right: 48px;
 margin-left: 48px;;
 }
 
-.cards {
+.places {
 border: 2px red solid;
+max-width: 1280px;
+/*margin: 0 auto; */
 margin-top: 12px;
+margin-right: auto;
+margin-bottom: 0px;
+margin-left: auto;
+padding: 0px;
+color: #FFFFFF;
+font-family: 'Inter';
+box-sizing: border-box;
 }
-.cards__item {
-border: 2px green solid;
-list-style: none;
+.place {
+border: 2px white solid;    
+margin: 0px;
 padding: 0px;
 display: grid;
-/*создали 2 колонки*/
-grid-template-columns: 460px, 524px;
+/*создали 2 колонки 460px 1fr*/
+grid-template-columns: 47% 53%;
 /*отступы для колонок*/
-column-gap: 40px;
+grid-column-gap: 40px;
+box-sizing: border-box;
 /*три ряда*/
-grid-template-rows: repeat(5, 460px) orange solid;
+/*и без этого должно сработать grid-template-rows: auto auto;*/
 }
-.cards__title {
-position: relative;
+.place__title { /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
+border: 2px solid green;
+/*position: relative;*/
+display: flex;
+flex-direction: column-reverse; /*текст внизу строки*/
 width: 460px;
 height: 152px;
-margin-top: 80px; /*у всех карточек расстояние сверху от текста до фотки*/
+margin-top: 80px; /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
 margin-bottom: 0px;
 margin-left: 148px;
 font-family: 'Inter';
@@ -219,45 +232,57 @@ line-height: 76px;
 /* or 106% */
 color: #FFFFFF;
 }
-.cards__image {
-    position: relative;
+
+.place__image {
     width: 460px;
     height: 460px;
     margin-top: 48px; /*у всех карточек расстояние снизу от текста до фотки*/
     margin-bottom: 0px;
     margin-left: 148px;
-display: inline-grid;
-border: 2px solid white;
 }
-.cards__website {
+.place__website {
+    border: 2px solid green;
     position: relative;
-    margin-top: 198px;
-    margin-right: 176px;
-    margin-bottom: 0px;
-    margin-left: 648px;
+    max-width: 484px;
+    max-height: 46px;
+    margin: 186px 176px 0px 0px; /* 198пх - 12пх и 110-12пх в places*/
 }
-.cards__website__url-heading {
-    /*position: relative;
-    width: 456px;
-    height: 12px;
-    margin-top: 106px;
-    margin-right: 176px;
-    margin-left: 648px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 170%;
-    /* or 20px */
-    letter-spacing: 2px;
-    color: #AAAAAA;*/
+/*place__website margin-top 110px у 2 3 и 5 элементов + у них же height title 76px а не 152 
+у 1 и 4 margin-top: 186px height title 152px ОШИБКА тоже не работает
+.place__website:nth-of-type(2) {
+    margin-top: 98px;
 }
-.cards__website__link {
-   /* position: relative;
+.place__website:nth-child(3) {
+    margin-top: 98px;
+}
+.place__website:nth-child(5) {
+    margin-top: 98px;
+} */
+.place__website:nth-of-type(5n) {
+    margin-top: 98px;
+} 
+
+.place__website__url-heading {
+position: relative;
+width: 456px;
+height: 12px;
+margin-top: 0px;
+margin-right: 0px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+/* identical to box height, or 100% */
+letter-spacing: 2px;
+color: #AAAAAA;
+}
+.place__website__link {
+   position: relative;
     width: 456px;
     height: 22px;
-    margin-top: 222px;
-    margin-left: 648px;
+    padding-top: 12px; /*222 по макету - 12пх из places*/
+    margin-right: 0px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -265,18 +290,18 @@ border: 2px solid white;
     line-height: 22px;
     /* identical to box height, or 122% */
     text-decoration-line: underline;
-    color: #FFFFFF;*/
+    color: #FFFFFF;
 }
-.cards__paragraph {
-    /*display: inline-grid;
-    border: 2px solid green;*/
+.place__paragraphs {
+    border: 2px solid green;
+    max-width: 484px;
+    margin: 48px 148px 0px 0px;
+}
+.place__paragraph {
+box-sizing: content-box;
 position: relative;
-width: 484px;
-height: 145px;
-margin-top: 292px;
-margin-right: 148px;
-margin-bottom: 0px;
-margin-left: 648px;
+max-width: 484px;
+margin: 0px 0px 0px 0px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -284,4 +309,58 @@ font-size: 18px;
 line-height: 163%;
 /* or 29px */
 color: #FFFFFF;
+}
+.place__paragraph:last-child {
+    margin-top: 26px;
+}
+
+.cover {
+border: 2px solid green;
+}
+.cover__title {
+    position: relative;
+    z-index: 1;
+    width: 560px;
+    height: 152px;
+    margin: 245px 312px 0px 312px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    /* or 106% */
+    text-align: center;
+    color: #FFFFFF;
+}
+.cover__subtitle {
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    height: 66px;
+    margin: 0px;
+    padding:32px 412px 0px 412px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    text-align: center;
+    color: #FFFFFF;
+}
+.cover__overlay {
+background-image: url("../images/cover-trains.jpg");
+background-size: cover;
+width: 1184px;
+height: 740px;
+margin-top: 92px;
+margin-right: 48px;
+margin-left: 48px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: 0;
+
+text-transform: uppercase;
 }
