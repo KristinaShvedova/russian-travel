@@ -322,7 +322,7 @@ margin: 0px 48px 0px 48px;
 }
 .cover__title {
     border: 2px solid green;
-    position: relative;
+    position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
     width: 560px;
     height: 152px;
@@ -338,8 +338,8 @@ margin: 0px 48px 0px 48px;
 }
 .cover__subtitle {
     border: 2px solid green;
-    position: relative;
-    z-index: 1;
+    position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
+    z-index: 1; /*задали чтоб затемнение не перекрывало текст*/
     width: 360px;
     height: 66px;
     margin: 0px;
@@ -359,27 +359,27 @@ width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-position: relative;
+position: relative; /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
 text-decoration: none;
-aspect-ratio: 1.6;
+aspect-ratio: 1.6; /*пропорция картинки ширины к высоте*/
 max-width: 1184px;
 max-height: 740px;
-z-index: 0;
+z-index: 0; /*задали чтоб затемнение не перекрывало текст*/
 }
 
-.cover__overplay::before {
+.cover__overlay:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
-    opacity: 0.3;
+    opacity: 0.3; /*прозрачность*/
     transition: 1s;
     background-color: #2A2C2F;
 }
 
-.cover__overplay::after {
+.cover__overlay:after {
 opacity: 0.8;
 background-color: #2A2C2F;
 }
@@ -422,7 +422,7 @@ color: #FFFFFF;
 .footer__link:last-of-type {
     padding-right: 0px;
 }
-.footer__author {
+.footer__author { /*поднять на уровень с ссылками ОШИБКА*/
     position: relative;
     width: 186px;
     height: 16px;
