@@ -10,25 +10,24 @@
 
 .header {
     border: 2px solid red;
-    height: 136px;
+    max-height: 136px;
+    max-width: 1280px;
 }
 .header__logo {
     position: relative;
-    width: 176px;
-    height: 52px;
-    top: 28px;
-    right: 1056px;
-    bottom: 6795px;
-    left: 48px;
+    max-width: 176px;
+    max-height: 52px;
+    margin-top: 28px;
+    /*margin-bottom: 56px; если добавить то линки ниже лого встают*/
+    margin-left: 48px;
     background: #2A2C2F;
     }
-.header__lang-link {
+.header__lang-link { /*на 1024пх поплыли*/
     position: relative; /*доп паддинги появляются*/
-    height: 28px;
-    width: 30px;
+    max-height: 28px;
+    max-width: 30px;
     margin-top: 46px;
-    /*margin-right: 95px;*/
-    margin-left: 1155px;
+    margin-left: 931px; /*отступ от лого + встал в одну строку с ним*/
     border-radius: 0px;
     color: #FFFFFF;
 font-family: 'Inter';
@@ -39,21 +38,32 @@ letter-spacing: 0em;
 text-align: right;
 text-decoration: underline;
 }
+@media (max-width:1024px) {
+    .header__lang-link {
+        margin-left: 675px;
+    }
+}
 .header__lang-link:last-child {
     width: 29px;
     /*margin-left: 1203px;*/
     margin-left: 18px;
+    /* переносится на строку вниз почему-то margin-right: 48px;*/
     text-decoration: none;
 }
-
 .lead {
-    border: 2px solid red;
+    border: 2px solid green;
+    margin-top: 50px; /*136 отступ сверху - 86 весь header*/
+}
+@media screen and (max-width:1024px) {
+    .lead {
+        margin-top: 42px; /*128 отступ сверху - 86 header*/
+    }
 }
 .lead__title {
     position: relative;
     /*box-sizing: border-box; cбоку торчит еще маржин*/
-    height: 200px;
-    width: 720px;
+    max-height: 200px;
+    max-width: 720px;
     margin-top: 0px;
     margin-right: 280px;
     margin-bottom: 0px;
@@ -67,6 +77,12 @@ line-height: 100px;
 /* or 104% */
 text-align: center;
 color: #FFFFFF;
+}
+@media screen and (max-width:1024px) {
+    .lead__title {
+        margin-right: 152px;
+        margin-left: 152px;
+    }
 }
 .lead__subtitle {
 position: relative;
@@ -86,15 +102,30 @@ line-height: 36px;
 text-align: center;
 color: #FFFFFF;
 }
+@media screen and (max-width:1024px) {
+    .lead__subtitle {
+        margin-right: 192px;
+        margin-left: 192px;
+    }
+}
 .lead__image {
     position: relative;
-    width: 984px;
-    height: 615px;
+    max-width: 984px;
+    max-height: 615px;
     margin-top: 64px;
     margin-right: 148px;
     margin-bottom: 0px;
     margin-left: 148px;
 /* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
+}
+@media screen and (max-width: 1024px) {
+    .lead__image {
+    max-width: 928px; /*896px показывает почему-то*/
+    max-height: 560px;
+    margin-top: 46px;
+    margin-right: 48px;
+    margin-left: 48px;
+    }
 }
 .lead__caption {
 position: relative;
@@ -316,9 +347,11 @@ color: #FFFFFF;
 
 .cover {
 border: 2px solid green;
+/*max-width: 1184px;
+max-height: 740px;*/
+margin: 92px 48px 92px 48px;
 max-width: 1184px;
 max-height: 740px;
-margin: 0px 48px 0px 48px;
 }
 .cover__title {
     border: 2px solid green;
@@ -328,7 +361,7 @@ margin: 0px 48px 0px 48px;
     height: 152px;
     padding: 245px 312px 0px 312px;
     margin: 0px;
-    font-family: 'Inter';
+    /* если я включу font-family: "Inter"; текст будет выглядеть не как в макете*/
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -343,8 +376,8 @@ margin: 0px 48px 0px 48px;
     width: 360px;
     height: 66px;
     margin: 0px;
-    padding:32px 412px 0px 412px;
-    font-family: 'Inter';
+    padding: 32px 412px 245px 412px;
+    /* если я включу font-family: "Inter"; текст будет выглядеть не как в макете*/
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -355,6 +388,7 @@ margin: 0px 48px 0px 48px;
 .cover__overlay { /*как его затемнить ОШИБКА*/
 background-image: url("../images/cover-trains.jpg");
 background-size: cover;
+/*width: 100%;*/
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -362,8 +396,6 @@ justify-content: center;
 position: relative; /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
 text-decoration: none;
 aspect-ratio: 1.6; /*пропорция картинки ширины к высоте*/
-max-width: 1184px;
-max-height: 740px;
 z-index: 0; /*задали чтоб затемнение не перекрывало текст*/
 }
 
@@ -385,15 +417,17 @@ background-color: #2A2C2F;
 }
 
 .footer {
-border: 2px solid green;
+/*border: 2px solid green;*/
 /*padding: 92px 48px 24px 48px;
 margin: 0px;
 max-width: 1184px;
 max-height: 18px;*/
+margin-right: 48px;
+margin-left: 48px;
 }
 .footer__container {
 border: 2px solid red;
-padding: 92px 48px 24px 48px;
+padding: 0px 0px 24px 0px;
 margin: 0px;
 max-width: 1184px;
 max-height: 18px;
@@ -401,8 +435,9 @@ max-height: 18px;
 .footer__links {
 display: flex;
 flex-direction: row;
-max-width: 651px;
-box-sizing: border-box;
+max-width: 465px; /*1280 - отступы*/
+/*box-sizing: border-box;*/
+/*margin-right: 767px;*/
 }
 .footer__link {
 /*position: absolute;
@@ -423,12 +458,10 @@ color: #FFFFFF;
     padding-right: 0px;
 }
 .footer__author { /*поднять на уровень с ссылками ОШИБКА*/
-    position: relative;
+    display: flex;
     width: 186px;
     height: 16px;
-    margin: 0px;
-    padding-top: 0px;
-    padding-left: 533px;
+    margin: 0px 0px 0px 998px; /*1046px - 48px;*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
