@@ -123,12 +123,14 @@ color: #FFFFFF;
         margin-left: 24px;
     }
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .lead__title {
         max-width: 288px; /*не правильно показаны пропорции ОШИБКА*/
         max-height: 88px;
         margin-right: 16px;
         margin-left: 16px;
+        size: 40px;
+        line-height: 44px;
     }
 }
 .lead__subtitle {
@@ -165,6 +167,7 @@ color: #FFFFFF;
     .lead__subtitle {
         max-width: 288px;
         max-height: 40px;
+        margin-top: 16px;
         margin-right: 16px;
         margin-left: 16px;
     }
@@ -196,6 +199,13 @@ color: #FFFFFF;
     margin-left: 0px;
     }
 }
+@media screen and (max-width: 320px) {
+    .lead__image {
+    max-width: 320px; /*896px показывает почему-то*/
+    max-height: 200px;
+    margin-top: 40px;
+    }
+}
 .lead__caption {
 position: relative;
 width: 158px;
@@ -214,7 +224,11 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-
+@media screen and (max-width: 320px) {
+    .lead__caption {
+        margin-left: 16px;
+    }
+}
 .intro {
 border: 2px solid red;
 margin: 0;
@@ -246,6 +260,16 @@ color: #FFFFFF;
     margin-left: 24px;
     }
 }
+@media screen and (max-width: 320px) {
+    .intro__title {
+    max-width: 288px; /*опять текст неправильно свернулся*/
+    max-height: 70px;
+    margin-top: 64px;
+    margin-left: 16px;
+    font-size: 32px;
+line-height: 35px;
+    }
+}
 .intro__text {
     position: relative;
     max-width: 690px;
@@ -268,6 +292,14 @@ color: #FFFFFF;
 @media screen and (max-width: 768px) {
     .intro__text {
     margin-left: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .intro__text {
+    margin-top: 40px;
+    margin-left: 16px;
+    max-width: 288px;
+    max-height: 520px;
     }
 }
 .intro__list { /*цифры не должны быть жирные ОШИБКА*/
@@ -295,6 +327,14 @@ list-style: none;
 @media screen and (max-width: 768px) {
     .intro__list {
     margin-left: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .intro__list {
+    max-width: 288px;
+    max-height: 90px;
+    margin-top: 34px;
+    margin-left: 16px;
     }
 }
 .photo-grid {
@@ -329,6 +369,15 @@ list-style: none;
         row-gap: 16px;
     }
 }
+@media screen and (max-width: 320px) {
+    .photo-grid {
+        margin-top: 64px;
+        grid-template-columns: repeat(1, 288px);
+        grid-template-rows: repeat(12, 216px);
+        column-gap: 16px;
+        row-gap: 12px;
+    }
+}
 .photo-grid__item {
 max-width: 284px;
 max-height: 213px;
@@ -348,6 +397,14 @@ margin-left: 48px;;
         max-height: 264px;
         margin-right: 24px;
         margin-left: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .photo-grid__item {
+        max-width: 288px;
+        max-height: 216px;
+        margin-right: 16px;
+        margin-left: 16px;
     }
 }
 .places {
@@ -406,6 +463,20 @@ color: #FFFFFF;
         max-height: 92px;
         margin-top: 76px; /*88-12 что стоят в margin-top places*/
         margin-left: 24px;
+font-size: 42px;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    .place__title {
+        max-width: 288px;
+        margin-top: 52px; /*64 - 12*/
+        margin-left: 16px;
+        font-size: 42px;
+line-height: 46px;
     }
 }
 .place__image {
@@ -429,6 +500,15 @@ color: #FFFFFF;
         margin-left: 24px;
 }
 }
+@media screen and (max-width: 320px) {
+    .place__image { 
+        max-width: 320px;
+        max-height: 320px;
+        margin-top: 32px;
+        margin-right: 0px;
+        margin-left: 0px;
+}
+}
 .place__website {
     border: 2px solid green;
     position: relative;
@@ -448,6 +528,13 @@ color: #FFFFFF;
         margin-top: 134px;
         margin-right: 24px; /*маржин выпирает за грань блока*/ 
         max-width: 352px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .place__website {
+        margin-top: 32px;
+        margin-right: 16px; /*маржин выпирает за грань блока*/ 
+        max-width: 288px;
     }
 }
 /*place__website margin-top 110px у 2 3 и 5 элементов + у них же height title 76px а не 152 
@@ -514,6 +601,13 @@ margin-right: 24px;
 max-width: 352px;
     }
 }
+@media screen and (max-width: 320px) {
+    .place__paragraphs {
+max-width: 288px;
+margin-right: 16px;
+margin-left: 16px;
+    }
+}
 .place__paragraph {
 box-sizing: content-box;
 position: relative;
@@ -532,6 +626,11 @@ color: #FFFFFF;
 max-width: 456px;
     }
 }
+/*@media screen and (max-width: 320px) {
+    .place__paragraph {
+        max-width: 288px;
+    }
+    }*/
 .place__paragraph:last-child {
     margin-top: 26px;
 }
@@ -540,6 +639,7 @@ max-width: 456px;
     margin-top: 25px;
 }
 }
+
 .cover {
 margin: 92px 48px 92px 48px;
 max-width: 1184px;
@@ -559,6 +659,14 @@ max-width: 768px;
 max-height: 480px;
 margin-top: 50px; /*90 - 40 нижний паддинг place__paragraphs*/
 margin-bottom: 88px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .cover {
+max-width: 320px;
+max-height: 200px;
+margin-top: 16px; /*66 - 40 нижний паддинг place__paragraphs*/
+margin-bottom: 64px;
     }
 }
 .cover__title {
@@ -591,6 +699,16 @@ padding-right: 104px;
 padding-left: 104px;
     }
 }
+@media screen and (max-width: 320px) {
+    .cover__title {
+        max-width: 288px;
+padding-top: 33px;
+padding-right: 16px;
+padding-left: 16px;
+size: 32px;
+line-height: 35px;
+    }
+}
 .cover__subtitle {
     border: 2px solid blue;
     position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
@@ -619,6 +737,17 @@ padding-left: 332px;
 padding-right: 204px;
 padding-bottom: 115px;
 padding-left: 204px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .cover__subtitle {
+max-width: 288px;
+padding-right: 16px;
+padding-bottom: 33px;
+padding-left: 16px;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
     }
 }
 .cover__overlay {
@@ -672,6 +801,13 @@ flex-direction: row;
 max-width: 465px; /*1280 - отступы*/
 /*box-sizing: border-box;*/
 /*margin-right: 767px;*/
+}
+@media screen and (max-width: 320px) {
+    .footer__links {
+        max-width: 158px;
+flex-direction: column;
+margin-left: 16px;
+    }
 }
 .footer__link {
 /*position: absolute;
