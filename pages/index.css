@@ -7,7 +7,11 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
+@media screen and (max-width: 1024px) {
+    .page {
+        max-width: 1024px; /*как её центрировать*/
+    }
+}
 .header {
     border: 2px solid red;
     max-height: 136px;
@@ -22,6 +26,14 @@
     margin-left: 48px;
     background: #2A2C2F;
     }
+@media screen and (max-width: 320px) {
+    .header__logo {
+        max-width: 142px;
+        max-height: 42px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+}
 .header__lang-link { /*на 1024пх поплыли*/
     position: relative; /*доп паддинги появляются*/
     max-height: 28px;
@@ -38,17 +50,33 @@ letter-spacing: 0em;
 text-align: right;
 text-decoration: underline;
 }
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
     .header__lang-link {
         margin-left: 675px;
     }
 }
+@media screen and (max-width: 320px) { /*опять ниже нужного стоит ОШИБКА*/
+    .header__lang-link {
+        max-width: 22px;
+        max-height: 20px;
+        margin-top: 30px;
+        margin-left: 84px;
+    }
+}
 .header__lang-link:last-child {
-    width: 29px;
+    max-width: 29px;
     /*margin-left: 1203px;*/
     margin-left: 18px;
     /* переносится на строку вниз почему-то margin-right: 48px;*/
     text-decoration: none;
+}
+@media screen and (max-width: 320px) {
+    .header__lang-link:last-child {
+        max-width: 22px;
+        max-height: 20px;
+        margin-top: 30px;
+        margin-right: 16px;
+    }
 }
 .lead {
     border: 2px solid green;
@@ -57,6 +85,11 @@ text-decoration: underline;
 @media screen and (max-width:1024px) {
     .lead {
         margin-top: 42px; /*128 отступ сверху - 86 header*/
+    }
+}
+@media screen and (max-width:320px) {
+    .lead {
+        margin-top: 20px; /*на 22 меньше чем у предыдущего*/
     }
 }
 .lead__title {
@@ -84,6 +117,20 @@ color: #FFFFFF;
         margin-left: 152px;
     }
 }
+@media screen and (max-width:768px) {
+    .lead__title {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
+@media screen and (max-width:320px) {
+    .lead__title {
+        max-width: 288px; /*не правильно показаны пропорции ОШИБКА*/
+        max-height: 88px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}
 .lead__subtitle {
 position: relative;
 margin: 0px;
@@ -108,6 +155,20 @@ color: #FFFFFF;
         margin-left: 192px;
     }
 }
+@media screen and (max-width:768px) {
+    .lead__subtitle {
+        margin-right: 64px;
+        margin-left: 64px;
+    }
+}
+@media screen and (max-width:320px) {
+    .lead__subtitle {
+        max-width: 288px;
+        max-height: 40px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}
 .lead__image {
     position: relative;
     max-width: 984px;
@@ -122,9 +183,17 @@ color: #FFFFFF;
     .lead__image {
     max-width: 928px; /*896px показывает почему-то*/
     max-height: 560px;
-    margin-top: 46px;
+    margin-top: 56px;
     margin-right: 48px;
     margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .lead__image {
+    max-width: 768px; /*896px показывает почему-то*/
+    max-height: 480px;
+    margin-right: 0px;
+    margin-left: 0px;
     }
 }
 .lead__caption {
@@ -164,10 +233,23 @@ line-height: 58px;
 /* identical to box height, or 107% */
 color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+    .intro__title {
+    margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro__title {
+    max-width: 720px;
+    max-height: 58px;
+    margin-top: 88px;
+    margin-left: 24px;
+    }
+}
 .intro__text {
-    position: absolute;
-    width: 690px;
-    height: 208px;
+    position: relative;
+    max-width: 690px;
+    max-height: 208px;
     margin-top: 40px;
     margin-left: 148px;
     font-family: 'Inter';
@@ -178,12 +260,22 @@ color: #FFFFFF;
     /* or 26px */
     color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+    .intro__text {
+    margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro__text {
+    margin-left: 24px;
+    }
+}
 .intro__list { /*цифры не должны быть жирные ОШИБКА*/
 position: relative;
-width: 690px;
-height: 90px;
+max-width: 690px;
+max-height: 90px;
 padding: 0px;
-margin-top: 281px;
+margin-top: 33px;
 margin-left: 148px;
 margin-bottom: 0px;
 font-family: 'Inter';
@@ -195,7 +287,16 @@ line-height: 18px;
 color: #FFFFFF;
 list-style: none;
 }
-
+@media screen and (max-width: 1024px) {
+    .intro__list {
+    margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro__list {
+    margin-left: 24px;
+    }
+}
 .photo-grid {
     border: 2px solid red;
     margin: 92px 0px 0px 0px;
@@ -211,14 +312,44 @@ list-style: none;
     /*ОШИБКА у последнего ряда занулить margin-bottom*/
     overflow: hidden;
 }
+@media screen and (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 225px);
+        column-gap: 14px;
+        row-gap: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        margin-top: 88px;
+        grid-template-columns: repeat(2, 352px);
+        grid-template-rows: repeat(6, 264px);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+}
 .photo-grid__item {
-width: 284px;
-height: 213px;
+max-width: 284px;
+max-height: 213px;
 display: inline-grid;
 margin-right: 48px;
 margin-left: 48px;;
 }
-
+@media screen and (max-width: 1024px) {
+    .photo-grid__item {
+        max-width: 300px;
+        max-height: 225px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .photo-grid__item {
+        max-width: 352px;
+        max-height: 264px;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
 .places {
 border: 2px red solid;
 max-width: 1280px;
@@ -250,8 +381,8 @@ border: 2px solid green;
 /*position: relative;*/
 display: flex;
 flex-direction: column-reverse; /*текст внизу строки*/
-width: 460px;
-height: 152px;
+max-width: 460px;
+max-height: 152px;
 margin-top: 80px; /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
 margin-bottom: 0px;
 margin-left: 148px;
@@ -263,20 +394,61 @@ line-height: 76px;
 /* or 106% */
 color: #FFFFFF;
 }
-
+@media screen and (max-width: 1024px) {
+    .place__title {
+        max-width: 440px;
+        margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .place__title {
+        max-width: 340px; /*ОШИБКА дефтулзы показывают 330пх*/
+        max-height: 92px;
+        margin-top: 76px; /*88-12 что стоят в margin-top places*/
+        margin-left: 24px;
+    }
+}
 .place__image {
-    width: 460px;
-    height: 460px;
+    max-width: 460px;
+    max-height: 460px;
     margin-top: 48px; /*у всех карточек расстояние снизу от текста до фотки*/
     margin-bottom: 0px;
     margin-left: 148px;
 }
+@media screen and (max-width: 1024px) {
+    .place__image { 
+        max-width: 440px;
+        max-height: 440px;
+        margin-left: 48px;
+}
+}
+@media screen and (max-width: 768px) {
+    .place__image { 
+        max-width: 340px;
+        max-height: 340px;
+        margin-left: 24px;
+}
+}
 .place__website {
     border: 2px solid green;
     position: relative;
-    max-width: 484px;
+    max-width: 456px; /*484px*/
     max-height: 46px;
-    margin: 186px 176px 0px 0px; /* 198пх - 12пх и 110-12пх в places*/
+    margin-top: 186px; /*198пх - 12пх и 110-12пх в places*/
+    margin-right: 176px; /*если маржин левый удалить, встает ровно, не выходя за блок*/
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 1024px) {
+    .place__website {
+        margin-right: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .place__website {
+        margin-top: 134px;
+        margin-right: 24px; /*маржин выпирает за грань блока*/ 
+        max-width: 352px;
+    }
 }
 /*place__website margin-top 110px у 2 3 и 5 элементов + у них же height title 76px а не 152 
 у 1 и 4 margin-top: 186px height title 152px ОШИБКА тоже не работает
@@ -295,10 +467,12 @@ color: #FFFFFF;
 
 .place__website__url-heading {
 position: relative;
-width: 456px;
-height: 12px;
+width: 456px; /*все равно дефтулзы показывают меньше*/
+max-height: 12px;
 margin-top: 0px;
-margin-right: 0px;
+/*margin-right: 176px;*/
+margin-bottom: 0px;
+/*margin-left: 40px;*/
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -311,9 +485,9 @@ color: #AAAAAA;
 .place__website__link {
    position: relative;
     width: 456px;
-    height: 22px;
+    max-height: 22px;
     padding-top: 12px; /*222 по макету - 12пх из places*/
-    margin-right: 0px;
+    /*margin-right: 176px; когда псевдокласс делаю для отступа 110пх не работает*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -326,7 +500,19 @@ color: #AAAAAA;
 .place__paragraphs {
     border: 2px solid green;
     max-width: 484px;
-    margin: 48px 148px 0px 0px;
+    margin: 48px 148px 40px 0px;
+}
+@media screen and (max-width: 1024px) {
+    .place__paragraphs {
+margin-right: 48px; /*выходит за рамки блока*/
+max-width: 456px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .place__paragraphs {
+margin-right: 24px;
+max-width: 352px;
+    }
 }
 .place__paragraph {
 box-sizing: content-box;
@@ -341,17 +527,39 @@ line-height: 163%;
 /* or 29px */
 color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+    .place__paragraph {
+max-width: 456px;
+    }
+}
 .place__paragraph:last-child {
     margin-top: 26px;
 }
-
+@media screen and (max-width: 768px) {
+.place__paragraph:last-child {
+    margin-top: 25px;
+}
+}
 .cover {
-border: 2px solid green;
-/*max-width: 1184px;
-max-height: 740px;*/
 margin: 92px 48px 92px 48px;
 max-width: 1184px;
 max-height: 740px;
+}
+@media screen and (max-width: 1024px) {
+    .cover {
+max-width: 1024px;
+max-height: 640px;
+margin-right: 0px;
+margin-left: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cover {
+max-width: 768px;
+max-height: 480px;
+margin-top: 50px; /*90 - 40 нижний паддинг place__paragraphs*/
+margin-bottom: 88px;
+    }
 }
 .cover__title {
     border: 2px solid green;
@@ -369,8 +577,22 @@ max-height: 740px;
     text-align: center;
     color: #FFFFFF;
 }
+@media screen and (max-width: 1024px) {
+    .cover__title {
+padding-top: 195px;
+padding-right: 232px;
+padding-left: 232px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cover__title {
+padding-top: 115px;
+padding-right: 104px;
+padding-left: 104px;
+    }
+}
 .cover__subtitle {
-    border: 2px solid green;
+    border: 2px solid blue;
     position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1; /*задали чтоб затемнение не перекрывало текст*/
     width: 360px;
@@ -385,7 +607,21 @@ max-height: 740px;
     text-align: center;
     color: #FFFFFF;
 }
-.cover__overlay { /*как его затемнить ОШИБКА*/
+@media screen and (max-width: 1024px) {
+    .cover__subtitle {
+padding-right: 332px;
+padding-bottom: 195px;
+padding-left: 332px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cover__subtitle {
+padding-right: 204px;
+padding-bottom: 115px;
+padding-left: 204px;
+    }
+}
+.cover__overlay {
 background-image: url("../images/cover-trains.jpg");
 background-size: cover;
 /*width: 100%;*/
@@ -398,7 +634,6 @@ text-decoration: none;
 aspect-ratio: 1.6; /*пропорция картинки ширины к высоте*/
 z-index: 0; /*задали чтоб затемнение не перекрывало текст*/
 }
-
 .cover__overlay:before {
     content: "";
     position: absolute;
@@ -410,7 +645,6 @@ z-index: 0; /*задали чтоб затемнение не перекрыва
     transition: 1s;
     background-color: #2A2C2F;
 }
-
 .cover__overlay:after {
 opacity: 0.8;
 background-color: #2A2C2F;
@@ -461,7 +695,7 @@ color: #FFFFFF;
     display: flex;
     width: 186px;
     height: 16px;
-    margin: 0px 0px 0px 998px; /*1046px - 48px;*/
+    margin: 0px 0px 0px 998px; /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -469,4 +703,14 @@ color: #FFFFFF;
     line-height: 16px;
     text-align: right;
     color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+    .footer__author {
+        margin-left: 742px; /*790 - 48*/
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer__author {
+        margin-left: 534px; /*558 - 24*/
+    }
 }
