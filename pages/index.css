@@ -61,6 +61,8 @@ text-decoration: underline;
         max-height: 20px;
         margin-top: 30px;
         margin-left: 84px;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 .header__lang-link:last-child {
@@ -75,7 +77,8 @@ text-decoration: underline;
         max-width: 22px;
         max-height: 20px;
         margin-top: 30px;
-        margin-right: 16px;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 .lead {
@@ -129,7 +132,7 @@ color: #FFFFFF;
         max-height: 88px;
         margin-right: 16px;
         margin-left: 16px;
-        size: 40px;
+        font-size: 40px;
         line-height: 44px;
     }
 }
@@ -170,6 +173,8 @@ color: #FFFFFF;
         margin-top: 16px;
         margin-right: 16px;
         margin-left: 16px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 .lead__image {
@@ -472,11 +477,12 @@ text-align: left;
 }
 @media screen and (max-width: 320px) {
     .place__title {
-        max-width: 288px;
+        width: 288px;
         margin-top: 52px; /*64 - 12*/
+        margin-right: 16px;
         margin-left: 16px;
-        font-size: 42px;
-line-height: 46px;
+        line-height: 35px;
+        font-size: 32px;
     }
 }
 .place__image {
@@ -530,13 +536,16 @@ line-height: 46px;
         max-width: 352px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) { /*не встает под title*/
     .place__website {
-        margin-top: 32px;
-        margin-right: 16px; /*маржин выпирает за грань блока*/ 
-        max-width: 288px;
+        margin-top: 0px;
+        padding-top: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 288px;
     }
 }
+
 /*place__website margin-top 110px у 2 3 и 5 элементов + у них же height title 76px а не 152 
 у 1 и 4 margin-top: 186px height title 152px ОШИБКА тоже не работает
 .place__website:nth-of-type(2) {
@@ -554,7 +563,7 @@ line-height: 46px;
 
 .place__website__url-heading {
 position: relative;
-width: 456px; /*все равно дефтулзы показывают меньше*/
+max-width: 456px; /*все равно дефтулзы показывают меньше*/
 max-height: 12px;
 margin-top: 0px;
 /*margin-right: 176px;*/
@@ -569,9 +578,10 @@ line-height: 12px;
 letter-spacing: 2px;
 color: #AAAAAA;
 }
+
 .place__website__link {
    position: relative;
-    width: 456px;
+    max-width: 456px;
     max-height: 22px;
     padding-top: 12px; /*222 по макету - 12пх из places*/
     /*margin-right: 176px; когда псевдокласс делаю для отступа 110пх не работает*/
@@ -601,11 +611,13 @@ margin-right: 24px;
 max-width: 352px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) { /*текст не встает под картинку*/
     .place__paragraphs {
-max-width: 288px;
+width: 288px;
 margin-right: 16px;
 margin-left: 16px;
+font-size: 16px;
+line-height: 163%;
     }
 }
 .place__paragraph {
@@ -699,13 +711,13 @@ padding-right: 104px;
 padding-left: 104px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) { /*высота больше нужного из-за этого subtitle далеко стоит*/
     .cover__title {
         max-width: 288px;
 padding-top: 33px;
 padding-right: 16px;
 padding-left: 16px;
-size: 32px;
+font-size: 32px;
 line-height: 35px;
     }
 }
@@ -742,6 +754,7 @@ padding-left: 204px;
 @media screen and (max-width: 320px) {
     .cover__subtitle {
 max-width: 288px;
+padding-top: 16px;
 padding-right: 16px;
 padding-bottom: 33px;
 padding-left: 16px;
@@ -845,8 +858,10 @@ color: #FFFFFF;
         margin-left: 742px; /*790 - 48*/
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*ОШИБКА встает под link*/
     .footer__author {
-        margin-left: 534px; /*558 - 24*/
-    }
+        margin-left: 558px; /*вышел за грань блока*/
+        /*margin-right: 24px;
+        margin-left: 69px;*/
+        }
 }
