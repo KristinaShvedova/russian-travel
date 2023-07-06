@@ -1,0 +1,43 @@
+.place__website {
+    border: 2px solid green;
+    position: relative;
+    max-width: 456px;
+    /*484px*/
+    max-height: 46px;
+    margin-top: 186px;
+    /*198пх - 12пх и 110-12пх в places*/
+    margin-right: 176px;
+    /*если маржин левый удалить, встает ровно, не выходя за блок*/
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .place__website {
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place__website {
+        margin-top: 134px;
+        margin-right: 24px;
+        /*маржин выпирает за грань блока*/
+        max-width: 352px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /*не встает под title*/
+    .place__website {
+        margin-top: 0px;
+        padding-top: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 288px;
+    }
+}
+
+.place__website:nth-of-type(5n) {
+    margin-top: 98px;
+}

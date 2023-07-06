@@ -1,0 +1,16 @@
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    max-width: 465px;
+    /*1280 - отступы*/
+}
+
+@media screen and (max-width: 320px) {
+    .footer__links {
+        max-width: 158px;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-top: 32px;
+        /*64 - 32 паддинг у link налез на cover почему-то хотя все паддинги и маржины нижние стоят в блоке cover*/
+    }
+}

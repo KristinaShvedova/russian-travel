@@ -1,0 +1,33 @@
+.place__paragraphs {
+    border: 2px solid green;
+    max-width: 484px;
+    margin: 48px 148px 40px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .place__paragraphs {
+        margin-right: 48px;
+        /*выходит за рамки блока*/
+        max-width: 456px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place__paragraphs {
+        margin-right: 24px;
+        max-width: 352px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /*текст не встает под картинку*/
+    .place__paragraphs {
+        max-width: 288px;
+        margin-top: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 16px;
+        line-height: 163%;
+    }
+}

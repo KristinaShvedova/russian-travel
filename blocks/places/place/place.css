@@ -1,0 +1,18 @@
+.place {
+    border: 2px white solid;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    /*создали 2 колонки 460px 1fr*/
+    grid-template-columns: 47% 53%;
+    /*отступы для колонок*/
+    grid-column-gap: 40px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+    .place {
+        grid-template-columns: none;
+        /*тогда плывет текст в остальных версиях*/
+    }
+}

@@ -1,0 +1,34 @@
+.cover__overlay {
+    background-image: url("../images/cover-trains.jpg");
+    background-size: cover;
+    /*width: 100%;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
+    text-decoration: none;
+    aspect-ratio: 1.6;
+    /*пропорция картинки ширины к высоте*/
+    z-index: 0;
+    /*задали чтоб затемнение не перекрывало текст*/
+}
+
+.cover__overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    /*прозрачность*/
+    transition: 1s;
+    background-color: #2A2C2F;
+}
+
+.cover__overlay:after {
+    opacity: 0.8;
+    background-color: #2A2C2F;
+}

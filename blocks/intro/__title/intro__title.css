@@ -1,0 +1,41 @@
+.intro__title {
+    position: relative;
+    width: 690px;
+    height: 58px;
+    margin-top: 92px;
+    margin-left: 148px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    /* identical to box height, or 107% */
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro__title {
+        margin-left: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro__title {
+        max-width: 720px;
+        max-height: 58px;
+        margin-top: 88px;
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro__title {
+        max-width: 288px;
+        /*опять текст неправильно свернулся*/
+        max-height: 70px;
+        margin-top: 64px;
+        margin-left: 16px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+}

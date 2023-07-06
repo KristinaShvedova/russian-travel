@@ -1,0 +1,43 @@
+.footer__author {
+    /*поднять на уровень с ссылками ОШИБКА*/
+    display: flex;
+    width: 186px;
+    height: 16px;
+    margin: 0px 0px 0px 998px;
+    /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__author {
+        margin-left: 742px;
+        /*790 - 48*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*ОШИБКА встает под link*/
+    .footer__author {
+        margin-left: 558px;
+        /*вышел за грань блока*/
+        /*если поставить margin-right: 24px;
+        или margin-left: 69px; его вообще не видно в блоке*/
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__author {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

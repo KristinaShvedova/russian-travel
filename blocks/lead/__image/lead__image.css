@@ -1,0 +1,40 @@
+.lead__image {
+    position: relative;
+    max-width: 984px;
+    max-height: 615px;
+    margin-top: 64px;
+    margin-right: 148px;
+    margin-bottom: 0px;
+    margin-left: 148px;
+    /* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
+}
+
+@media screen and (max-width: 1024px) {
+    .lead__image {
+        max-width: 928px;
+        /*896px показывает почему-то*/
+        max-height: 560px;
+        margin-top: 56px;
+        margin-right: 48px;
+        margin-left: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead__image {
+        max-width: 768px;
+        /*896px показывает почему-то*/
+        max-height: 480px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lead__image {
+        max-width: 320px;
+        /*896px показывает почему-то*/
+        max-height: 200px;
+        margin-top: 40px;
+    }
+}
