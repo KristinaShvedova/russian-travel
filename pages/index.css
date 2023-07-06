@@ -415,7 +415,6 @@ margin-left: 48px;;
 .places {
 border: 2px red solid;
 max-width: 1280px;
-/*margin: 0 auto; */
 margin-top: 12px;
 margin-right: auto;
 margin-bottom: 0px;
@@ -425,6 +424,12 @@ color: #FFFFFF;
 font-family: 'Inter';
 box-sizing: border-box;
 }
+@media screen and (max-width: 320px) {
+    .places {
+        margin-top: 14px; /*64 - 50пх*/
+    }
+}
+
 .place {
 border: 2px white solid;    
 margin: 0px;
@@ -435,8 +440,12 @@ grid-template-columns: 47% 53%;
 /*отступы для колонок*/
 grid-column-gap: 40px;
 box-sizing: border-box;
-/*три ряда*/
-/*и без этого должно сработать grid-template-rows: auto auto;*/
+}
+
+@media screen and (max-width: 320px) {
+    .place {
+        grid-template-columns: none; /*тогда плывет текст в остальных версиях*/
+    }
 }
 .place__title { /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
 border: 2px solid green;
@@ -478,7 +487,7 @@ text-align: left;
 @media screen and (max-width: 320px) {
     .place__title {
         width: 288px;
-        margin-top: 52px; /*64 - 12*/
+        margin-top: 50px; /*во всех карточках после 1ой маржин 50*/
         margin-right: 16px;
         margin-left: 16px;
         line-height: 35px;
@@ -546,17 +555,6 @@ text-align: left;
     }
 }
 
-/*place__website margin-top 110px у 2 3 и 5 элементов + у них же height title 76px а не 152 
-у 1 и 4 margin-top: 186px height title 152px ОШИБКА тоже не работает
-.place__website:nth-of-type(2) {
-    margin-top: 98px;
-}
-.place__website:nth-child(3) {
-    margin-top: 98px;
-}
-.place__website:nth-child(5) {
-    margin-top: 98px;
-} */
 .place__website:nth-of-type(5n) {
     margin-top: 98px;
 } 
@@ -613,7 +611,8 @@ max-width: 352px;
 }
 @media screen and (max-width: 320px) { /*текст не встает под картинку*/
     .place__paragraphs {
-width: 288px;
+max-width: 288px;
+margin-top: 32px;
 margin-right: 16px;
 margin-left: 16px;
 font-size: 16px;
@@ -793,13 +792,13 @@ background-color: #2A2C2F;
 }
 
 .footer {
-/*border: 2px solid green;*/
-/*padding: 92px 48px 24px 48px;
-margin: 0px;
-max-width: 1184px;
-max-height: 18px;*/
 margin-right: 48px;
 margin-left: 48px;
+}
+@media screen and (max-width: 320px) {
+    .footer {
+        width: 320px;
+    }
 }
 .footer__container {
 border: 2px solid red;
@@ -812,20 +811,16 @@ max-height: 18px;
 display: flex;
 flex-direction: row;
 max-width: 465px; /*1280 - отступы*/
-/*box-sizing: border-box;*/
-/*margin-right: 767px;*/
 }
 @media screen and (max-width: 320px) {
     .footer__links {
-        max-width: 158px;
+max-width: 158px;
 flex-direction: column;
 margin-left: 16px;
+margin-top: 32px; /*64 - 32 паддинг у link налез на cover почему-то хотя все паддинги и маржины нижние стоят в блоке cover*/
     }
 }
 .footer__link {
-/*position: absolute;
-width: 50px;
-height: 18px;*/
 padding-top: 0px;
 padding-right: 18px;
 padding-left: 0px;
@@ -836,6 +831,13 @@ font-weight: 400;
 font-size: 16px;
 line-height: 18px;
 color: #FFFFFF;
+}
+@media screen and (max-width: 320px) {
+.footer__link {
+font-size: 24px;
+line-height: 24px;
+padding-top: 32px;
+}
 }
 .footer__link:last-of-type {
     padding-right: 0px;
@@ -861,7 +863,16 @@ color: #FFFFFF;
 @media screen and (max-width: 768px) { /*ОШИБКА встает под link*/
     .footer__author {
         margin-left: 558px; /*вышел за грань блока*/
-        /*margin-right: 24px;
-        margin-left: 69px;*/
+        /*если поставить margin-right: 24px;
+        или margin-left: 69px; его вообще не видно в блоке*/
+        }
+}
+@media screen and (max-width: 320px) {
+    .footer__author {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        margin-left: 16px;
+font-size: 14px;
+line-height: 14px;
         }
 }
