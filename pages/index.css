@@ -2,21 +2,26 @@
 .page {
     background-color: #2A2C2F;
     height: 6875px;
-    max-width: 1280px; /*header выходит за рамки почему-то*/
+    max-width: 1280px;
+    /*header выходит за рамки почему-то*/
     font-family: "Inter", "Arial", sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 @media screen and (max-width: 1024px) {
     .page {
-        max-width: 1024px; /*как её центрировать*/
+        max-width: 1024px;
+        /*как её центрировать*/
     }
 }
+
 .header {
     border: 2px solid red;
     max-height: 136px;
     max-width: 1280px;
 }
+
 .header__logo {
     position: relative;
     max-width: 176px;
@@ -25,7 +30,8 @@
     /*margin-bottom: 56px; если добавить то линки ниже лого встают*/
     margin-left: 48px;
     background: #2A2C2F;
-    }
+}
+
 @media screen and (max-width: 320px) {
     .header__logo {
         max-width: 142px;
@@ -34,28 +40,36 @@
         margin-left: 16px;
     }
 }
-.header__lang-link { /*на 1024пх поплыли*/
-    position: relative; /*доп паддинги появляются*/
+
+.header__lang-link {
+    /*на 1024пх поплыли*/
+    position: relative;
+    /*доп паддинги появляются*/
     max-height: 28px;
     max-width: 30px;
     margin-top: 46px;
-    margin-left: 931px; /*отступ от лого + встал в одну строку с ним*/
+    margin-left: 931px;
+    /*отступ от лого + встал в одну строку с ним*/
     border-radius: 0px;
     color: #FFFFFF;
-font-family: 'Inter';
-font-size: 24px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: right;
-text-decoration: underline;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+    text-decoration: underline;
 }
+
 @media screen and (max-width:1024px) {
     .header__lang-link {
         margin-left: 675px;
     }
 }
-@media screen and (max-width: 320px) { /*опять ниже нужного стоит ОШИБКА*/
+
+@media screen and (max-width: 320px) {
+
+    /*опять ниже нужного стоит ОШИБКА*/
     .header__lang-link {
         max-width: 22px;
         max-height: 20px;
@@ -65,6 +79,7 @@ text-decoration: underline;
         line-height: 20px;
     }
 }
+
 .header__lang-link:last-child {
     max-width: 29px;
     /*margin-left: 1203px;*/
@@ -72,6 +87,7 @@ text-decoration: underline;
     /* переносится на строку вниз почему-то margin-right: 48px;*/
     text-decoration: none;
 }
+
 @media screen and (max-width: 320px) {
     .header__lang-link:last-child {
         max-width: 22px;
@@ -81,20 +97,27 @@ text-decoration: underline;
         line-height: 20px;
     }
 }
+
 .lead {
     border: 2px solid green;
-    margin-top: 50px; /*136 отступ сверху - 86 весь header*/
+    margin-top: 50px;
+    /*136 отступ сверху - 86 весь header*/
 }
+
 @media screen and (max-width:1024px) {
     .lead {
-        margin-top: 42px; /*128 отступ сверху - 86 header*/
+        margin-top: 42px;
+        /*128 отступ сверху - 86 header*/
     }
 }
+
 @media screen and (max-width:320px) {
     .lead {
-        margin-top: 20px; /*на 22 меньше чем у предыдущего*/
+        margin-top: 20px;
+        /*на 22 меньше чем у предыдущего*/
     }
 }
+
 .lead__title {
     position: relative;
     /*box-sizing: border-box; cбоку торчит еще маржин*/
@@ -106,29 +129,33 @@ text-decoration: underline;
     margin-left: 280px;
     border-radius: 0px;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 96px;
-line-height: 100px;
-/* or 104% */
-text-align: center;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    /* or 104% */
+    text-align: center;
+    color: #FFFFFF;
 }
+
 @media screen and (max-width:1024px) {
     .lead__title {
         margin-right: 152px;
         margin-left: 152px;
     }
 }
+
 @media screen and (max-width:768px) {
     .lead__title {
         margin-right: 24px;
         margin-left: 24px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .lead__title {
-        max-width: 288px; /*не правильно показаны пропорции ОШИБКА*/
+        max-width: 288px;
+        /*не правильно показаны пропорции ОШИБКА*/
         max-height: 88px;
         margin-right: 16px;
         margin-left: 16px;
@@ -136,36 +163,40 @@ color: #FFFFFF;
         line-height: 44px;
     }
 }
+
 .lead__subtitle {
-position: relative;
-margin: 0px;
-width: 640px;
-height: 72px;
-margin-top: 32px;
-margin-right: 320px;
-margin-bottom: 0px;
-margin-left: 320px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
-/* or 120% */
-text-align: center;
-color: #FFFFFF;
+    position: relative;
+    margin: 0px;
+    width: 640px;
+    height: 72px;
+    margin-top: 32px;
+    margin-right: 320px;
+    margin-bottom: 0px;
+    margin-left: 320px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* or 120% */
+    text-align: center;
+    color: #FFFFFF;
 }
+
 @media screen and (max-width:1024px) {
     .lead__subtitle {
         margin-right: 192px;
         margin-left: 192px;
     }
 }
+
 @media screen and (max-width:768px) {
     .lead__subtitle {
         margin-right: 64px;
         margin-left: 64px;
     }
 }
+
 @media screen and (max-width:320px) {
     .lead__subtitle {
         max-width: 288px;
@@ -177,6 +208,7 @@ color: #FFFFFF;
         line-height: 20px;
     }
 }
+
 .lead__image {
     position: relative;
     max-width: 984px;
@@ -185,96 +217,112 @@ color: #FFFFFF;
     margin-right: 148px;
     margin-bottom: 0px;
     margin-left: 148px;
-/* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
+    /* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
 }
+
 @media screen and (max-width: 1024px) {
     .lead__image {
-    max-width: 928px; /*896px показывает почему-то*/
-    max-height: 560px;
-    margin-top: 56px;
-    margin-right: 48px;
-    margin-left: 48px;
+        max-width: 928px;
+        /*896px показывает почему-то*/
+        max-height: 560px;
+        margin-top: 56px;
+        margin-right: 48px;
+        margin-left: 48px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .lead__image {
-    max-width: 768px; /*896px показывает почему-то*/
-    max-height: 480px;
-    margin-right: 0px;
-    margin-left: 0px;
+        max-width: 768px;
+        /*896px показывает почему-то*/
+        max-height: 480px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .lead__image {
-    max-width: 320px; /*896px показывает почему-то*/
-    max-height: 200px;
-    margin-top: 40px;
+        max-width: 320px;
+        /*896px показывает почему-то*/
+        max-height: 200px;
+        margin-top: 40px;
     }
 }
+
 .lead__caption {
-position: relative;
-width: 158px;
-height: 14px;
-white-space: nowrap; /*текст в одну строку встал*/
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 148px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 14px;
-/* identical to box height, or 140% */
-letter-spacing: 1.5px;
-text-transform: uppercase;
-color: #FFFFFF;
+    position: relative;
+    width: 158px;
+    height: 14px;
+    white-space: nowrap;
+    /*текст в одну строку встал*/
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 148px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height, or 140% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
+
 @media screen and (max-width: 320px) {
     .lead__caption {
         margin-left: 16px;
     }
 }
+
 .intro {
-border: 2px solid red;
-margin: 0;
+    border: 2px solid red;
+    margin: 0;
 }
+
 .intro__title {
-position: relative;
-width: 690px;
-height: 58px;
-margin-top: 92px;
-margin-left: 148px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 54px;
-line-height: 58px;
-/* identical to box height, or 107% */
-color: #FFFFFF;
+    position: relative;
+    width: 690px;
+    height: 58px;
+    margin-top: 92px;
+    margin-left: 148px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    /* identical to box height, or 107% */
+    color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .intro__title {
-    margin-left: 48px;
+        margin-left: 48px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .intro__title {
-    max-width: 720px;
-    max-height: 58px;
-    margin-top: 88px;
-    margin-left: 24px;
+        max-width: 720px;
+        max-height: 58px;
+        margin-top: 88px;
+        margin-left: 24px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .intro__title {
-    max-width: 288px; /*опять текст неправильно свернулся*/
-    max-height: 70px;
-    margin-top: 64px;
-    margin-left: 16px;
-    font-size: 32px;
-line-height: 35px;
+        max-width: 288px;
+        /*опять текст неправильно свернулся*/
+        max-height: 70px;
+        margin-top: 64px;
+        margin-left: 16px;
+        font-size: 32px;
+        line-height: 35px;
     }
 }
+
 .intro__text {
     position: relative;
     max-width: 690px;
@@ -289,59 +337,68 @@ line-height: 35px;
     /* or 26px */
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .intro__text {
-    margin-left: 48px;
+        margin-left: 48px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .intro__text {
-    margin-left: 24px;
+        margin-left: 24px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .intro__text {
-    margin-top: 40px;
-    margin-left: 16px;
-    max-width: 288px;
-    max-height: 520px;
+        margin-top: 40px;
+        margin-left: 16px;
+        max-width: 288px;
+        max-height: 520px;
     }
 }
-.intro__list { /*цифры не должны быть жирные ОШИБКА*/
-position: relative;
-max-width: 690px;
-max-height: 90px;
-padding: 0px;
-margin-top: 33px;
-margin-left: 148px;
-margin-bottom: 0px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-color: #FFFFFF;
-list-style: none;
-}
-@media screen and (max-width: 1024px) {
-    .intro__list {
-    margin-left: 48px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .intro__list {
-    margin-left: 24px;
-    }
-}
-@media screen and (max-width: 320px) {
-    .intro__list {
-    max-width: 288px;
+
+.intro__list {
+    /*цифры не должны быть жирные ОШИБКА*/
+    position: relative;
+    max-width: 690px;
     max-height: 90px;
-    margin-top: 34px;
-    margin-left: 16px;
+    padding: 0px;
+    margin-top: 33px;
+    margin-left: 148px;
+    margin-bottom: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    color: #FFFFFF;
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro__list {
+        margin-left: 48px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .intro__list {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro__list {
+        max-width: 288px;
+        max-height: 90px;
+        margin-top: 34px;
+        margin-left: 16px;
+    }
+}
+
 .photo-grid {
     border: 2px solid red;
     margin: 92px 0px 0px 0px;
@@ -351,12 +408,13 @@ list-style: none;
     /*отступы для колонок*/
     column-gap: 16px;
     /*три ряда*/
-    grid-template-rows: repeat(3,213px);
+    grid-template-rows: repeat(3, 213px);
     /*отступы для рядов*/
-    row-gap: 16px; 
+    row-gap: 16px;
     /*ОШИБКА у последнего ряда занулить margin-bottom*/
     overflow: hidden;
 }
+
 @media screen and (max-width: 1024px) {
     .photo-grid {
         grid-template-columns: repeat(3, 300px);
@@ -365,6 +423,7 @@ list-style: none;
         row-gap: 14px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .photo-grid {
         margin-top: 88px;
@@ -374,6 +433,7 @@ list-style: none;
         row-gap: 16px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .photo-grid {
         margin-top: 64px;
@@ -383,19 +443,23 @@ list-style: none;
         row-gap: 12px;
     }
 }
+
 .photo-grid__item {
-max-width: 284px;
-max-height: 213px;
-display: inline-grid;
-margin-right: 48px;
-margin-left: 48px;;
+    max-width: 284px;
+    max-height: 213px;
+    display: inline-grid;
+    margin-right: 48px;
+    margin-left: 48px;
+    ;
 }
+
 @media screen and (max-width: 1024px) {
     .photo-grid__item {
         max-width: 300px;
         max-height: 225px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .photo-grid__item {
         max-width: 352px;
@@ -404,6 +468,7 @@ margin-left: 48px;;
         margin-left: 24px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .photo-grid__item {
         max-width: 288px;
@@ -412,140 +477,169 @@ margin-left: 48px;;
         margin-left: 16px;
     }
 }
+
 .places {
-border: 2px red solid;
-max-width: 1280px;
-margin-top: 12px;
-margin-right: auto;
-margin-bottom: 0px;
-margin-left: auto;
-padding: 0px;
-color: #FFFFFF;
-font-family: 'Inter';
-box-sizing: border-box;
+    border: 2px red solid;
+    max-width: 1280px;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    box-sizing: border-box;
 }
+
 @media screen and (max-width: 320px) {
     .places {
-        margin-top: 14px; /*64 - 50пх*/
+        margin-top: 14px;
+        /*64 - 50пх*/
     }
 }
 
 .place {
-border: 2px white solid;    
-margin: 0px;
-padding: 0px;
-display: grid;
-/*создали 2 колонки 460px 1fr*/
-grid-template-columns: 47% 53%;
-/*отступы для колонок*/
-grid-column-gap: 40px;
-box-sizing: border-box;
+    border: 2px white solid;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    /*создали 2 колонки 460px 1fr*/
+    grid-template-columns: 47% 53%;
+    /*отступы для колонок*/
+    grid-column-gap: 40px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 320px) {
     .place {
-        grid-template-columns: none; /*тогда плывет текст в остальных версиях*/
+        grid-template-columns: none;
+        /*тогда плывет текст в остальных версиях*/
     }
 }
-.place__title { /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
-border: 2px solid green;
-/*position: relative;*/
-display: flex;
-flex-direction: column-reverse; /*текст внизу строки*/
-max-width: 460px;
-max-height: 152px;
-margin-top: 80px; /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
-margin-bottom: 0px;
-margin-left: 148px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 72px;
-line-height: 76px;
-/* or 106% */
-color: #FFFFFF;
+
+.place__title {
+    /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
+    border: 2px solid green;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column-reverse;
+    /*текст внизу строки*/
+    max-width: 460px;
+    max-height: 152px;
+    margin-top: 80px;
+    /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
+    margin-bottom: 0px;
+    margin-left: 148px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    /* or 106% */
+    color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .place__title {
         max-width: 440px;
         margin-left: 48px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .place__title {
-        max-width: 340px; /*ОШИБКА дефтулзы показывают 330пх*/
+        max-width: 340px;
+        /*ОШИБКА дефтулзы показывают 330пх*/
         max-height: 92px;
-        margin-top: 76px; /*88-12 что стоят в margin-top places*/
+        margin-top: 76px;
+        /*88-12 что стоят в margin-top places*/
         margin-left: 24px;
-font-size: 42px;
-line-height: 46px;
-letter-spacing: 0em;
-text-align: left;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
 
     }
 }
+
 @media screen and (max-width: 320px) {
     .place__title {
         width: 288px;
-        margin-top: 50px; /*во всех карточках после 1ой маржин 50*/
+        margin-top: 50px;
+        /*во всех карточках после 1ой маржин 50*/
         margin-right: 16px;
         margin-left: 16px;
         line-height: 35px;
         font-size: 32px;
     }
 }
+
 .place__image {
     max-width: 460px;
     max-height: 460px;
-    margin-top: 48px; /*у всех карточек расстояние снизу от текста до фотки*/
+    margin-top: 48px;
+    /*у всех карточек расстояние снизу от текста до фотки*/
     margin-bottom: 0px;
     margin-left: 148px;
 }
+
 @media screen and (max-width: 1024px) {
-    .place__image { 
+    .place__image {
         max-width: 440px;
         max-height: 440px;
         margin-left: 48px;
+    }
 }
-}
+
 @media screen and (max-width: 768px) {
-    .place__image { 
+    .place__image {
         max-width: 340px;
         max-height: 340px;
         margin-left: 24px;
+    }
 }
-}
+
 @media screen and (max-width: 320px) {
-    .place__image { 
+    .place__image {
         max-width: 320px;
         max-height: 320px;
         margin-top: 32px;
         margin-right: 0px;
         margin-left: 0px;
+    }
 }
-}
+
 .place__website {
     border: 2px solid green;
     position: relative;
-    max-width: 456px; /*484px*/
+    max-width: 456px;
+    /*484px*/
     max-height: 46px;
-    margin-top: 186px; /*198пх - 12пх и 110-12пх в places*/
-    margin-right: 176px; /*если маржин левый удалить, встает ровно, не выходя за блок*/
+    margin-top: 186px;
+    /*198пх - 12пх и 110-12пх в places*/
+    margin-right: 176px;
+    /*если маржин левый удалить, встает ровно, не выходя за блок*/
     margin-bottom: 0px;
 }
+
 @media screen and (max-width: 1024px) {
     .place__website {
         margin-right: 48px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .place__website {
         margin-top: 134px;
-        margin-right: 24px; /*маржин выпирает за грань блока*/ 
+        margin-right: 24px;
+        /*маржин выпирает за грань блока*/
         max-width: 352px;
     }
 }
-@media screen and (max-width: 320px) { /*не встает под title*/
+
+@media screen and (max-width: 320px) {
+
+    /*не встает под title*/
     .place__website {
         margin-top: 0px;
         padding-top: 32px;
@@ -557,31 +651,33 @@ text-align: left;
 
 .place__website:nth-of-type(5n) {
     margin-top: 98px;
-} 
+}
 
 .place__website__url-heading {
-position: relative;
-max-width: 456px; /*все равно дефтулзы показывают меньше*/
-max-height: 12px;
-margin-top: 0px;
-/*margin-right: 176px;*/
-margin-bottom: 0px;
-/*margin-left: 40px;*/
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-/* identical to box height, or 100% */
-letter-spacing: 2px;
-color: #AAAAAA;
+    position: relative;
+    max-width: 456px;
+    /*все равно дефтулзы показывают меньше*/
+    max-height: 12px;
+    margin-top: 0px;
+    /*margin-right: 176px;*/
+    margin-bottom: 0px;
+    /*margin-left: 40px;*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 100% */
+    letter-spacing: 2px;
+    color: #AAAAAA;
 }
 
 .place__website__link {
-   position: relative;
+    position: relative;
     max-width: 456px;
     max-height: 22px;
-    padding-top: 12px; /*222 по макету - 12пх из places*/
+    padding-top: 12px;
+    /*222 по макету - 12пх из places*/
     /*margin-right: 176px; когда псевдокласс делаю для отступа 110пх не работает*/
     font-family: 'Inter';
     font-style: normal;
@@ -592,51 +688,61 @@ color: #AAAAAA;
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+
 .place__paragraphs {
     border: 2px solid green;
     max-width: 484px;
     margin: 48px 148px 40px 0px;
 }
+
 @media screen and (max-width: 1024px) {
     .place__paragraphs {
-margin-right: 48px; /*выходит за рамки блока*/
-max-width: 456px;
+        margin-right: 48px;
+        /*выходит за рамки блока*/
+        max-width: 456px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .place__paragraphs {
-margin-right: 24px;
-max-width: 352px;
+        margin-right: 24px;
+        max-width: 352px;
     }
 }
-@media screen and (max-width: 320px) { /*текст не встает под картинку*/
+
+@media screen and (max-width: 320px) {
+
+    /*текст не встает под картинку*/
     .place__paragraphs {
-max-width: 288px;
-margin-top: 32px;
-margin-right: 16px;
-margin-left: 16px;
-font-size: 16px;
-line-height: 163%;
+        max-width: 288px;
+        margin-top: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 16px;
+        line-height: 163%;
     }
 }
+
 .place__paragraph {
-box-sizing: content-box;
-position: relative;
-max-width: 484px;
-margin: 0px 0px 0px 0px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 163%;
-/* or 29px */
-color: #FFFFFF;
+    box-sizing: content-box;
+    position: relative;
+    max-width: 484px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    /* or 29px */
+    color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .place__paragraph {
-max-width: 456px;
+        max-width: 456px;
     }
 }
+
 /*@media screen and (max-width: 320px) {
     .place__paragraph {
         max-width: 288px;
@@ -645,44 +751,52 @@ max-width: 456px;
 .place__paragraph:last-child {
     margin-top: 26px;
 }
+
 @media screen and (max-width: 768px) {
-.place__paragraph:last-child {
-    margin-top: 25px;
-}
+    .place__paragraph:last-child {
+        margin-top: 25px;
+    }
 }
 
 .cover {
-margin: 92px 48px 92px 48px;
-max-width: 1184px;
-max-height: 740px;
+    margin: 92px 48px 92px 48px;
+    max-width: 1184px;
+    max-height: 740px;
 }
+
 @media screen and (max-width: 1024px) {
     .cover {
-max-width: 1024px;
-max-height: 640px;
-margin-right: 0px;
-margin-left: 0px;
+        max-width: 1024px;
+        max-height: 640px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .cover {
-max-width: 768px;
-max-height: 480px;
-margin-top: 50px; /*90 - 40 нижний паддинг place__paragraphs*/
-margin-bottom: 88px;
+        max-width: 768px;
+        max-height: 480px;
+        margin-top: 50px;
+        /*90 - 40 нижний паддинг place__paragraphs*/
+        margin-bottom: 88px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .cover {
-max-width: 320px;
-max-height: 200px;
-margin-top: 16px; /*66 - 40 нижний паддинг place__paragraphs*/
-margin-bottom: 64px;
+        max-width: 320px;
+        max-height: 200px;
+        margin-top: 16px;
+        /*66 - 40 нижний паддинг place__paragraphs*/
+        margin-bottom: 64px;
     }
 }
+
 .cover__title {
     border: 2px solid green;
-    position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
+    position: relative;
+    /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
     width: 560px;
     height: 152px;
@@ -696,34 +810,42 @@ margin-bottom: 64px;
     text-align: center;
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .cover__title {
-padding-top: 195px;
-padding-right: 232px;
-padding-left: 232px;
+        padding-top: 195px;
+        padding-right: 232px;
+        padding-left: 232px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .cover__title {
-padding-top: 115px;
-padding-right: 104px;
-padding-left: 104px;
+        padding-top: 115px;
+        padding-right: 104px;
+        padding-left: 104px;
     }
 }
-@media screen and (max-width: 320px) { /*высота больше нужного из-за этого subtitle далеко стоит*/
+
+@media screen and (max-width: 320px) {
+
+    /*высота больше нужного из-за этого subtitle далеко стоит*/
     .cover__title {
         max-width: 288px;
-padding-top: 33px;
-padding-right: 16px;
-padding-left: 16px;
-font-size: 32px;
-line-height: 35px;
+        padding-top: 33px;
+        padding-right: 16px;
+        padding-left: 16px;
+        font-size: 32px;
+        line-height: 35px;
     }
 }
+
 .cover__subtitle {
     border: 2px solid blue;
-    position: relative; /*если родитель - флексбокс z-index работает и без позиционирования*/
-    z-index: 1; /*задали чтоб затемнение не перекрывало текст*/
+    position: relative;
+    /*если родитель - флексбокс z-index работает и без позиционирования*/
+    z-index: 1;
+    /*задали чтоб затемнение не перекрывало текст*/
     width: 360px;
     height: 66px;
     margin: 0px;
@@ -736,45 +858,53 @@ line-height: 35px;
     text-align: center;
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .cover__subtitle {
-padding-right: 332px;
-padding-bottom: 195px;
-padding-left: 332px;
+        padding-right: 332px;
+        padding-bottom: 195px;
+        padding-left: 332px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .cover__subtitle {
-padding-right: 204px;
-padding-bottom: 115px;
-padding-left: 204px;
+        padding-right: 204px;
+        padding-bottom: 115px;
+        padding-left: 204px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .cover__subtitle {
-max-width: 288px;
-padding-top: 16px;
-padding-right: 16px;
-padding-bottom: 33px;
-padding-left: 16px;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+        max-width: 288px;
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-bottom: 33px;
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
+
 .cover__overlay {
-background-image: url("../images/cover-trains.jpg");
-background-size: cover;
-/*width: 100%;*/
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative; /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
-text-decoration: none;
-aspect-ratio: 1.6; /*пропорция картинки ширины к высоте*/
-z-index: 0; /*задали чтоб затемнение не перекрывало текст*/
+    background-image: url("../images/cover-trains.jpg");
+    background-size: cover;
+    /*width: 100%;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
+    text-decoration: none;
+    aspect-ratio: 1.6;
+    /*пропорция картинки ширины к высоте*/
+    z-index: 0;
+    /*задали чтоб затемнение не перекрывало текст*/
 }
+
 .cover__overlay:before {
     content: "";
     position: absolute;
@@ -782,71 +912,85 @@ z-index: 0; /*задали чтоб затемнение не перекрыва
     height: 100%;
     top: 0px;
     left: 0px;
-    opacity: 0.3; /*прозрачность*/
+    opacity: 0.3;
+    /*прозрачность*/
     transition: 1s;
     background-color: #2A2C2F;
 }
+
 .cover__overlay:after {
-opacity: 0.8;
-background-color: #2A2C2F;
+    opacity: 0.8;
+    background-color: #2A2C2F;
 }
 
 .footer {
-margin-right: 48px;
-margin-left: 48px;
+    margin-right: 48px;
+    margin-left: 48px;
 }
+
 @media screen and (max-width: 320px) {
     .footer {
         width: 320px;
     }
 }
+
 .footer__container {
-border: 2px solid red;
-padding: 0px 0px 24px 0px;
-margin: 0px;
-max-width: 1184px;
-max-height: 18px;
+    border: 2px solid red;
+    padding: 0px 0px 24px 0px;
+    margin: 0px;
+    max-width: 1184px;
+    max-height: 18px;
 }
+
 .footer__links {
-display: flex;
-flex-direction: row;
-max-width: 465px; /*1280 - отступы*/
+    display: flex;
+    flex-direction: row;
+    max-width: 465px;
+    /*1280 - отступы*/
 }
+
 @media screen and (max-width: 320px) {
     .footer__links {
-max-width: 158px;
-flex-direction: column;
-margin-left: 16px;
-margin-top: 32px; /*64 - 32 паддинг у link налез на cover почему-то хотя все паддинги и маржины нижние стоят в блоке cover*/
+        max-width: 158px;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-top: 32px;
+        /*64 - 32 паддинг у link налез на cover почему-то хотя все паддинги и маржины нижние стоят в блоке cover*/
     }
 }
+
 .footer__link {
-padding-top: 0px;
-padding-right: 18px;
-padding-left: 0px;
-text-decoration: none;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color: #FFFFFF;
+    padding-top: 0px;
+    padding-right: 18px;
+    padding-left: 0px;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
+
 @media screen and (max-width: 320px) {
-.footer__link {
-font-size: 24px;
-line-height: 24px;
-padding-top: 32px;
+    .footer__link {
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 32px;
+    }
 }
-}
+
 .footer__link:last-of-type {
     padding-right: 0px;
 }
-.footer__author { /*поднять на уровень с ссылками ОШИБКА*/
+
+.footer__author {
+    /*поднять на уровень с ссылками ОШИБКА*/
     display: flex;
     width: 186px;
     height: 16px;
-    margin: 0px 0px 0px 998px; /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
+    margin: 0px 0px 0px 998px;
+    /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -855,24 +999,31 @@ padding-top: 32px;
     text-align: right;
     color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px) {
     .footer__author {
-        margin-left: 742px; /*790 - 48*/
+        margin-left: 742px;
+        /*790 - 48*/
     }
 }
-@media screen and (max-width: 768px) { /*ОШИБКА встает под link*/
+
+@media screen and (max-width: 768px) {
+
+    /*ОШИБКА встает под link*/
     .footer__author {
-        margin-left: 558px; /*вышел за грань блока*/
+        margin-left: 558px;
+        /*вышел за грань блока*/
         /*если поставить margin-right: 24px;
         или margin-left: 69px; его вообще не видно в блоке*/
-        }
+    }
 }
+
 @media screen and (max-width: 320px) {
     .footer__author {
         margin-top: 48px;
         margin-bottom: 24px;
         margin-left: 16px;
-font-size: 14px;
-line-height: 14px;
-        }
+        font-size: 14px;
+        line-height: 14px;
+    }
 }
