@@ -2,6 +2,7 @@
 @import url(../vendor/normalize.css);
 
 /* нужно подключить шрифты + описать их внутри файла inter @import url(../vendor/fonts/inter/); но у меня везде один и тот же шрифт Inter исопльзуется не понимаю*/
+/*пытаюсь сохранить на гит хаб всё*/
 
 @import url(../blocks/page/page.css);
 
