@@ -1,7 +1,6 @@
-/*написать весь код для 1280 потом для меньших версий его раскидать по папкам и подключить ключи*/
 @import url(../vendor/normalize.css);
 
-/* нужно подключить шрифты + описать их внутри файла inter @import url(../vendor/fonts/inter/); но у меня везде один и тот же шрифт Inter исопльзуется не понимаю*/
+/*нужно подключить шрифты inter @import url(../vendor/fonts/inter/)*/
 
 @import url(../blocks/page/page.css);
 
