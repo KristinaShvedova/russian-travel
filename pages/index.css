@@ -1,6 +1,12 @@
 @import url(../vendor/normalize.css);
 
 /*нужно подключить шрифты inter @import url(../vendor/fonts/inter/)*/
+@import url(../vendor/fonts/inter/Inter-Regular.woff2);
+@import url(../vendor/fonts/inter/Inter-Regular.woff);
+@import url(../vendor/fonts/inter/Inter-Bold.woff2);
+@import url(../vendor/fonts/inter/Inter-Bold.woff);
+@import url(../vendor/fonts/inter/Inter-Black.woff2);
+@import url(../vendor/fonts/inter/Inter-Black.woff);
 
 @import url(../blocks/page/page.css);
 
