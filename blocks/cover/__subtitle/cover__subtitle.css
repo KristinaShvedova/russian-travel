@@ -1,5 +1,4 @@
 .cover__subtitle {
-    border: 2px solid blue;
     position: relative;
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;

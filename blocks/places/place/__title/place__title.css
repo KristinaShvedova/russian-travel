@@ -1,6 +1,5 @@
 .place__title {
     /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
-    border: 2px solid green;
     /*position: relative;*/
     display: flex;
     flex-direction: column-reverse;
