@@ -1,10 +1,9 @@
 .intro__text {
     position: relative;
     max-width: 690px;
-    max-height: 208px;
+    min-height: 208px;
     margin-top: 40px;
     margin-left: 148px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -30,6 +29,6 @@
         margin-top: 40px;
         margin-left: 16px;
         max-width: 288px;
-        max-height: 520px;
+        min-height: 520px;
     }
 }

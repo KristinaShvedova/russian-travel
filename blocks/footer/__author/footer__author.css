@@ -1,8 +1,8 @@
 .footer__author {
     /*поднять на уровень с ссылками ОШИБКА*/
     display: flex;
-    width: 186px;
-    height: 16px;
+    max-width: 186px;
+    /* нужно удалить height: 16px;*/
     margin: 0px 0px 0px 998px;
     /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
     font-family: 'Inter';

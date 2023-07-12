@@ -2,8 +2,8 @@
     position: relative;
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
-    width: 560px;
-    height: 152px;
+    max-width: 560px;
+    /* нужно удалить height: 152px;*/
     padding: 245px 312px 0px 312px;
     margin: 0px;
     /* если я включу font-family: "Inter"; текст будет выглядеть не как в макете*/

@@ -5,12 +5,10 @@
     flex-direction: column-reverse;
     /*текст внизу строки*/
     max-width: 460px;
-    max-height: 152px;
     margin-top: 80px;
     /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
     margin-bottom: 0px;
     margin-left: 148px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -30,7 +28,6 @@
     .place__title {
         max-width: 340px;
         /*ОШИБКА дефтулзы показывают 330пх*/
-        max-height: 92px;
         margin-top: 76px;
         /*88-12 что стоят в margin-top places*/
         margin-left: 24px;
@@ -44,7 +41,7 @@
 
 @media screen and (max-width: 320px) {
     .place__title {
-        width: 288px;
+        max-width: 288px;
         margin-top: 50px;
         /*во всех карточках после 1ой маржин 50*/
         margin-right: 16px;

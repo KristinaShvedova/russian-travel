@@ -1,15 +1,15 @@
+/* сделать их на уровне лого */
 .header__lang-link {
     /*на 1024пх поплыли*/
     position: relative;
     /*доп паддинги появляются*/
-    max-height: 28px;
+    /* удалить нужно max-height: 28px;*/
     max-width: 30px;
     margin-top: 46px;
     margin-left: 931px;
     /*отступ от лого + встал в одну строку с ним*/
     border-radius: 0px;
     color: #FFFFFF;
-    font-family: 'Inter';
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
@@ -28,7 +28,7 @@
     .header__lang-link {
         /*опять ниже нужного стоит ОШИБКА*/
         max-width: 22px;
-        max-height: 20px;
+        /* удалить max-height: 20px;*/
         margin-top: 30px;
         margin-left: 84px;
         font-size: 18px;
@@ -46,7 +46,7 @@
 @media screen and (max-width: 320px) {
     .header__lang-link:last-child {
         max-width: 22px;
-        max-height: 20px;
+        /* удалить max-height: 20px;*/
         margin-top: 30px;
         font-size: 18px;
         line-height: 20px;

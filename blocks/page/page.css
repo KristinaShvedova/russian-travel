@@ -3,10 +3,9 @@
   }
 .page {
     background-color: #2A2C2F;
-    /* сказали удалить height: 6875px;*/
     max-width: 1280px;
     /*header выходит за рамки почему-то*/
-    font-family: "Inter", "Arial", sans-serif;
+    font-family: "Inter", "Arial", sans-serif; /*итак указан шрифт + альтернативный + удалить везде gont-family*/
     margin: 0 auto;
     box-sizing: border-box;
 }
