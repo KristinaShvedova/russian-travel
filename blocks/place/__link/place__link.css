@@ -12,3 +12,10 @@
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+.place__link:hover {
+    /*при наведении мышки*/
+    opacity: 0.5;
+    /*полупрозрачная ссылка*/
+    transition: 1s;
+    /*плавный переход*/
+}

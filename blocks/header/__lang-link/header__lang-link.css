@@ -20,6 +20,13 @@
     text-align: right;
     /*list-style-type: none;*/
 }
+    .header__lang-link:hover {
+        /*при наведении мышки*/
+        opacity: 0.5;
+        /*полупрозрачная ссылка*/
+        transition: 1s;
+        /*плавный переход*/
+    }
 
 @media screen and (max-width:1024px) {
     .header__lang-link {
