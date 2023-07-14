@@ -5,7 +5,6 @@
     /* нужно удалить height: 16px;*/
     margin: 0px 0px 0px 998px;
     /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
