@@ -13,15 +13,16 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+    /*1200 вместо 1024*/
     .footer__author {
         margin-left: 742px;
         /*790 - 48*/
     }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1000px) {
+    /*1000 вместо 768*/
     /*ОШИБКА встает под link*/
     .footer__author {
         margin-left: 558px;
@@ -31,7 +32,8 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
+    /*700 вместо 320*/
     .footer__author {
         margin-top: 48px;
         margin-bottom: 24px;

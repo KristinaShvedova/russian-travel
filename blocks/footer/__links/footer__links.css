@@ -5,7 +5,8 @@
     /*1280 - отступы*/
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
+    /*500 вместо 320*/
     .footer__links {
         max-width: 158px;
         flex-direction: column;

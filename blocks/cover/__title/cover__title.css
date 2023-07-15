@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 500px) {
-
+    /*500 вместо 320*/
     /*высота больше нужного из-за этого subtitle далеко стоит*/
     .cover__title {
         max-width: 288px;
