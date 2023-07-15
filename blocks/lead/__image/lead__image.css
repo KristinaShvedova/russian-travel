@@ -1,7 +1,6 @@
 .lead__image {
-    position: flex;
+    position: relative;
     max-width: 984px;
-    max-height: 615px;
     margin-top: 64px;
     margin-right: 148px;
     margin-bottom: 0px;
