@@ -26,10 +26,9 @@
     }
 }
 
-@media screen and (max-width: 700px) {
-    /*вместо 320 700*/
-    /*все равно торчит сбоку*/
-    /*не встает под title*/
+@media screen and (max-width: 750px) {
+    /*750 вместо 320*/
+    /*меньше 600px все равно торчит сбоку*/
     .place__website {
         margin-top: 0px;
         padding-top: 32px;

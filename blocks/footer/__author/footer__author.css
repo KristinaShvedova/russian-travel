@@ -27,8 +27,6 @@
     .footer__author {
         margin-left: 558px;
         /*вышел за грань блока*/
-        /*если поставить margin-right: 24px;
-        или margin-left: 69px; его вообще не видно в блоке*/
     }
 }
 
