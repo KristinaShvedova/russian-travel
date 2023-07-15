@@ -13,7 +13,8 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1260px) {
+    /*1200 вместо 1024*/
     .photo-grid {
         grid-template-columns: repeat(3, 300px);
         /*удалить количество рядов grid-template-rows: repeat(4, 225px);*/
@@ -22,7 +23,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    /*вместо 768 ставим 1000 */
     .photo-grid {
         margin-top: 88px;
         grid-template-columns: repeat(2, 352px);
@@ -32,7 +34,8 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 800px) {
+    /*700 вместо 320*/
     .photo-grid {
         margin-top: 64px;
         grid-template-columns: repeat(1, 288px);
