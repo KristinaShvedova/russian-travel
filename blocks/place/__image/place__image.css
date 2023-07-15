@@ -1,6 +1,5 @@
 .place__image {
     max-width: 460px;
-    max-height: 460px;
     margin-top: 48px;
     /*у всех карточек расстояние снизу от текста до фотки*/
     margin-bottom: 0px;
@@ -10,7 +9,6 @@
 @media screen and (max-width: 1024px) {
     .place__image {
         max-width: 440px;
-        max-height: 440px;
         margin-left: 48px;
     }
 }
@@ -18,15 +16,14 @@
 @media screen and (max-width: 768px) {
     .place__image {
         max-width: 340px;
-        max-height: 340px;
         margin-left: 24px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
+    /*750 вместо 320*/
     .place__image {
         max-width: 320px;
-        max-height: 320px;
         margin-top: 32px;
         margin-right: 0px;
         margin-left: 0px;

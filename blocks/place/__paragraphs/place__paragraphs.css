@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 1024px) {
     .place__paragraphs {
-        margin-right: 48px;
+        margin-right: 32px;
         /*выходит за рамки блока*/
         max-width: 456px;
     }
@@ -18,8 +18,9 @@
     }
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 750px) {
+    /*750 вместо 320*/
+    /*все равно скрол*/
     /*текст не встает под картинку*/
     .place__paragraphs {
         max-width: 288px;

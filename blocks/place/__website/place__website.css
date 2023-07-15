@@ -16,7 +16,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    /*1000 вместо 768*/
     .place__website {
         margin-top: 134px;
         margin-right: 24px;
@@ -26,7 +27,8 @@
 }
 
 @media screen and (max-width: 700px) {
-    /*вместо 320 700 все равно торчит сбоку*/
+    /*вместо 320 700*/
+    /*все равно торчит сбоку*/
     /*не встает под title*/
     .place__website {
         margin-top: 0px;
