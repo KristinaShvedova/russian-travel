@@ -2,8 +2,6 @@
 .header__lang-link {
     /*на 1024пх поплыли*/
     position: relative;
-    /*доп паддинги появляются*/
-    /* удалить нужно max-height: 28px;*/
     max-width: 30px;
     margin-top: 46px;
     margin-left: 931px;
@@ -28,13 +26,20 @@
         /*плавный переход*/
     }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1100px) {
+    /*чтобы не было скрола вместо 1024px 1100 стоит*/
     .header__lang-link {
         margin-left: 675px;
     }
 }
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 900px) {
+    /*чтобы не было скрола вместо 768px 900 стоит*/
+    .header__lang-link {
+        margin-left: 467px;
+    }
+}
+@media screen and (max-width: 500px) {
+    /*500 вместо 320*/
     .header__lang-link {
         /*опять ниже нужного стоит ОШИБКА*/
         max-width: 22px;

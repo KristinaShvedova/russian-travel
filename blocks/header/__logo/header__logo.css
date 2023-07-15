@@ -1,17 +1,20 @@
 .header__logo {
     position: relative;
     max-width: 176px;
-    max-height: 52px;
     margin-top: 28px;
     /*margin-bottom: 56px; если добавить то линки ниже лого встают*/
     margin-left: 48px;
     background: #2A2C2F;
   }
   
+  @media screen and (max-width: 768px) {
+    .header__logo {
+      margin-left: 24px;
+    }
+  }
   @media screen and (max-width: 320px) {
     .header__logo {
         max-width: 142px;
-        max-height: 42px;
         margin-top: 16px;
         margin-left: 16px;
     }

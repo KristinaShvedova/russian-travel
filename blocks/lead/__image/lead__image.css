@@ -1,5 +1,5 @@
 .lead__image {
-    position: relative;
+    position: flex;
     max-width: 984px;
     max-height: 615px;
     margin-top: 64px;
@@ -9,32 +9,33 @@
     /* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+    /*вместо 1024 1200 чтоб не было скрола*/
     .lead__image {
         max-width: 928px;
         /*896px показывает почему-то*/
-        max-height: 560px;
         margin-top: 56px;
         margin-right: 48px;
         margin-left: 48px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    /*900 вместо 768*/
     .lead__image {
         max-width: 768px;
         /*896px показывает почему-то*/
-        max-height: 480px;
         margin-right: 0px;
         margin-left: 0px;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
+    /*800 вместо 320*/
     .lead__image {
         max-width: 320px;
         /*896px показывает почему-то*/
-        max-height: 200px;
         margin-top: 40px;
     }
 }
