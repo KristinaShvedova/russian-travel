@@ -31,8 +31,15 @@
         padding-left: 204px;
     }
 }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    /*мой промежуточный*/
+    .cover__subtitle {
+        padding-right: 102px;
+        padding-bottom: 102px;
+        padding-left: 102px;
+    }
+}
+@media screen and (max-width: 400px) {
     /*500 вместо 320*/
     .cover__subtitle {
         max-width: 288px;

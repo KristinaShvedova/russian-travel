@@ -22,15 +22,21 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     /*900 вместо 768 чтоб не было скрола*/
     .lead__title {
         margin-right: 24px;
         margin-left: 24px;
     }
 }
+@media screen and (max-width: 900px) {
+    .lead__title {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 750px) {
     /*760 вместо 320 чтоб не было скрола*/
     .lead__title {
         max-width: 288px;

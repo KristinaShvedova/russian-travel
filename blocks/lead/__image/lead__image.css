@@ -30,8 +30,15 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    /*800 вместо 320*/
+@media screen and (max-width: 800px) {
+    /*мой промежуточный*/
+    .lead__image {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*600 вместо 320*/
     .lead__image {
         max-width: 320px;
         /*896px показывает почему-то*/
