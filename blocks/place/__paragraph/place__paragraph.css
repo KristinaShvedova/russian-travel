@@ -11,29 +11,21 @@
 }
 
 @media screen and (max-width: 1150px) {
+
     /*1200 вместо 1024*/
     .place__paragraph {
         max-width: 456px;
     }
 }
-/*@media screen and (max-width: 1200px) {
-    /*мой промежуточный
-    .place__paragraph {
-        max-width: 456px;
-    }
-}*/
+
 @media screen and (max-width: 900px) {
+
     /*900 вместо 768*/
     .place__paragraph {
         font-size: 16px;
     }
 }
-/*@media screen and (max-width: 500px) {
-    /*мой промежуточный с 320px до 700 все равно торчит скролл
-    .place__paragraph {
-        max-width: 340px;
-    }
-}*/
+
 .place__paragraph:last-child {
     margin-top: 26px;
 }

@@ -4,6 +4,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+
     /*1200 вместо 1024*/
     .place__paragraphs {
         margin-right: 32px;
@@ -13,14 +14,17 @@
 }
 
 @media screen and (max-width: 1000px) {
+
     /*вместо 768 1000px*/
     .place__paragraphs {
         margin-right: 24px;
         max-width: 352px;
     }
 }
+
 /*только с фиксированной шириной в мною созданных промежутых брекпоинтах с 320px до 700 не торчит текст из блока, поэтому нет скролла*/
 @media screen and (max-width: 700px) {
+
     /*мой промежуточный*/
     .place__paragraphs {
         margin-right: 0px;
@@ -28,7 +32,9 @@
         max-width: 210px;
     }
 }
+
 @media screen and (max-width: 450px) {
+
     /*мой промежуточный*/
     .place__paragraphs {
         margin-right: 0px;
@@ -36,7 +42,9 @@
         max-width: 140px;
     }
 }
+
 @media screen and (max-width: 320px) {
+
     /*500 вместо 320*/
     /*все равно скрол*/
     /*текст не встает под картинку*/
