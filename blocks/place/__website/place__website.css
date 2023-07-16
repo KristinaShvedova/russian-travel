@@ -25,10 +25,30 @@
         max-width: 352px;
     }
 }
-
 @media screen and (max-width: 750px) {
-    /*750 вместо 320*/
+    /*мой промежуточный*/
     /*меньше 600px все равно торчит сбоку*/
+    .place__website {
+        margin-top: 74px;
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 230px;
+    }
+}
+@media screen and (max-width: 490px) {
+    /*мой промежуточный*/
+    .place__website {
+        margin-top: 74px;
+        padding-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 320px) {
+    /*330 вместо 320*/
+    /*на 326px все равно торчит сбоку*/
     .place__website {
         margin-top: 0px;
         padding-top: 32px;
