@@ -27,25 +27,19 @@
     }
 
 @media screen and (max-width: 1250px) {
-    /*чтобы не было скрола вместо 1024px 1200 стоит*/
+    /*чтобы не было скрола вместо 1024px 1250 стоит*/
     .header__lang-link {
         margin-left: 675px;
     }
 }
-@media screen and (max-width: 1010px) {
-    /*мой прмоежуточный*/
-    .header__lang-link {
-        margin-left: 520px;
-    }
-}
-@media screen and (max-width: 800px) {
-    /*чтобы не было скрола вместо 768px 1000 стоит*/
+@media screen and (max-width: 1000px) {
+    /*чтобы не было скрола вместо 768px 900 стоит*/
     .header__lang-link {
         margin-left: 467px;
     }
 }
-@media screen and (max-width: 600px) {
-    /*800 вместо 320*/
+@media screen and (max-width: 750px) {
+    /*750 вместо 320*/
     .header__lang-link {
         /*опять ниже нужного стоит ОШИБКА*/
         max-width: 22px;
