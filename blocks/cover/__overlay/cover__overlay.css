@@ -21,7 +21,7 @@
     }
 }
 @media screen and (max-width: 800px) {
-    /*1000 вместо 768*/
+    /*800 вместо 768*/
     .cover__overlay {
         max-width: 768px;
     }

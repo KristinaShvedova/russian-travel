@@ -32,13 +32,19 @@
         margin-left: 675px;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1010px) {
+    /*мой прмоежуточный*/
+    .header__lang-link {
+        margin-left: 520px;
+    }
+}
+@media screen and (max-width: 800px) {
     /*чтобы не было скрола вместо 768px 1000 стоит*/
     .header__lang-link {
         margin-left: 467px;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     /*800 вместо 320*/
     .header__lang-link {
         /*опять ниже нужного стоит ОШИБКА*/
