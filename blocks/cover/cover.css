@@ -1,14 +1,11 @@
-/* заменили везде max-height на min-height*/
 .cover {
-    margin: 92px 48px 92px 48px;
-    max-width: 1184px;
-    min-height: 740px;
+    margin: 92px 0px 92px 0px;
+    max-width: 1280px;
 }
 
 @media screen and (max-width: 1024px) {
     .cover {
         max-width: 1024px;
-        min-height: 640px;
         margin-right: 0px;
         margin-left: 0px;
     }
@@ -17,18 +14,16 @@
 @media screen and (max-width: 768px) {
     .cover {
         max-width: 768px;
-        min-height: 480px;
-        margin-top: 50px;
-        /*90 - 40 нижний паддинг place__paragraphs*/
-        margin-bottom: 88px;
+        margin-top: 90px;
+        margin-bottom: 48px;
+        /*88px - 40 нижний паддинг place__paragraphs*/
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover {
         max-width: 320px;
-        min-height: 200px;
-        margin-top: 16px;
+        margin-top: 26px;
         /*66 - 40 нижний паддинг place__paragraphs*/
         margin-bottom: 64px;
     }

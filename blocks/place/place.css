@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     display: grid;
-    /*создали 2 колонки 460px 1fr*/
+    /*создали 2 колонки*/
     grid-template-columns: 47% 53%;
     /*отступы для колонок*/
     grid-column-gap: 40px;

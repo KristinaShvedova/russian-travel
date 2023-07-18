@@ -2,12 +2,9 @@
     position: relative;
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
-    /*задали чтоб затемнение не перекрывало текст*/
     max-width: 360px;
-    /* удалить нужно height: 66px;*/
-    margin: 0px;
-    padding: 32px 412px 245px 412px;
-    /* если я включу font-family: "Inter"; текст будет выглядеть не как в макете*/
+    /*412 по бокам*/
+    margin: 32px auto 245px auto;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -18,35 +15,23 @@
 
 @media screen and (max-width: 1024px) {
     .cover__subtitle {
-        padding-right: 332px;
-        padding-bottom: 195px;
-        padding-left: 332px;
+        /*по бокам 332px;*/
+        margin-bottom: 195px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cover__subtitle {
-        padding-right: 204px;
-        padding-bottom: 115px;
-        padding-left: 204px;
+        /*по бокам 204px;*/
+        margin-bottom: 115px;
     }
 }
-@media screen and (max-width: 600px) {
-    /*мой промежуточный*/
-    .cover__subtitle {
-        padding-right: 102px;
-        padding-bottom: 102px;
-        padding-left: 102px;
-    }
-}
-@media screen and (max-width: 400px) {
-    /*500 вместо 320*/
+
+@media screen and (max-width: 320px) {
     .cover__subtitle {
         max-width: 288px;
-        padding-top: 16px;
-        padding-right: 16px;
-        padding-bottom: 33px;
-        padding-left: 16px;
+        /*по бокам по 16пх*/
+        margin: 16px auto 33px auto;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;

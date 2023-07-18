@@ -2,50 +2,32 @@
     background-image: url("../../../images/cover-trains.jpg");
     background-size: cover;
     max-width: 1184px;
-    margin: 92px 0px 0px 0px;
+    /*только благодаря AUTO margin-rigth и left картинка встала по центру*/
+    /*справа и слева по 48пх*/
+    margin: 92px auto 0px auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-    /*чтоб только на секцию растягивалось затемнение а не на весь экран*/
     text-decoration: none;
-    aspect-ratio: 1.6;
     /*пропорция картинки ширины к высоте*/
-    z-index: 0;
+    aspect-ratio: 1.6;
     /*задали чтоб затемнение не перекрывало текст*/
+    z-index: 0;
 }
-@media screen and (max-width: 1200px) {
-    /*1100 вместо 1024*/
+
+@media screen and (max-width: 1024px) {
     .cover__overlay {
         max-width: 1024px;
     }
 }
-@media screen and (max-width: 1050px) {
-    /*мой промежуточный*/
-    .cover__overlay {
-        max-width: 800px;
-    }
-}
-@media screen and (max-width: 800px) {
-    /*800 вместо 768*/
+
+@media screen and (max-width: 768px) {
     .cover__overlay {
         max-width: 768px;
     }
 }
-@media screen and (max-width: 700px) {
-    /*мой промежуточный*/
-    .cover__overlay {
-        max-width: 600px;
-    }
-}
-@media screen and (max-width: 600px) {
-    /*мой промежуточный*/
-    .cover__overlay {
-        max-width: 500px;
-    }
-}
-@media screen and (max-width: 400px) {
-    /*500 вместо 320*/
+
+@media screen and (max-width: 320px) {
     .cover__overlay {
         max-width: 320px;
     }

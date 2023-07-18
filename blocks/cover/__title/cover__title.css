@@ -3,10 +3,8 @@
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
     max-width: 560px;
-    /* нужно удалить height: 152px;*/
     padding: 245px 312px 0px 312px;
     margin: 0px;
-    /* если я включу font-family: "Inter"; текст будет выглядеть не как в макете*/
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -15,8 +13,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1200px) {
-    /*1100 вместо 1024*/
+@media screen and (max-width: 1024px) {
     .cover__title {
         padding-top: 195px;
         padding-right: 232px;
@@ -31,17 +28,9 @@
         padding-left: 104px;
     }
 }
-@media screen and (max-width: 600px) {
-    /*мой промежуточный*/
-    .cover__title {
-        max-width: 360px;
-        padding-right: 72px;
-        padding-bottom: 52px;
-        padding-left: 72px;
-        font-size: 52px;
-    }
-}
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 320px) {
+
     /*400 вместо 320*/
     /*высота больше нужного из-за этого subtitle далеко стоит*/
     .cover__title {
