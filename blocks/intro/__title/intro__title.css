@@ -1,14 +1,12 @@
 .intro__title {
     position: relative;
     max-width: 690px;
-    /*удалить height: 58px;*/
     margin-top: 92px;
     margin-left: 148px;
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
     line-height: 58px;
-    /* identical to box height, or 107% */
     color: #FFFFFF;
 }
 
@@ -19,7 +17,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    /*title залез на subtitle*/
     .intro__title {
         max-width: 720px;
         margin-top: 88px;
@@ -27,12 +24,9 @@
     }
 }
 
-@media screen and (max-width: 750px) {
-    /*700 вместо 320*/
+@media screen and (max-width: 320px) {
     .intro__title {
         max-width: 288px;
-        /*опять текст неправильно свернулся*/
-        /*удалить нужно max-height: 70px;*/
         margin-top: 64px;
         margin-left: 16px;
         font-size: 32px;
