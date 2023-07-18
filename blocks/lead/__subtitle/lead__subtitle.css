@@ -1,6 +1,6 @@
 .lead__subtitle {
     position: relative;
-    margin: 0px;
+    /*margin: 0px;*/
     max-width: 640px;
     margin-top: 32px;
     margin-right: 320px;
@@ -10,7 +10,6 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    /* or 120% */
     text-align: center;
     color: #FFFFFF;
 }
@@ -28,6 +27,7 @@
         margin-left: 64px;
     }
 }
+
 
 @media screen and (max-width: 320px) {
     .lead__subtitle {

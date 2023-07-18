@@ -1,8 +1,8 @@
 .lead__caption {
     position: relative;
     max-width: 158px;
-    white-space: nowrap;
     /*текст в одну строку встал*/
+    white-space: nowrap;
     margin-top: 8px;
     margin-bottom: 0px;
     margin-left: 148px;
@@ -15,7 +15,16 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+@media screen and (max-width: 1024px) {
+    .lead__caption {
+        margin-left: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .lead__caption {
+        margin-left: 24px;
+    }
+}
 @media screen and (max-width: 320px) {
     .lead__caption {
         margin-left: 16px;

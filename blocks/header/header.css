@@ -1,4 +1,6 @@
 header {
     max-width: 1280px;
-    display: flex; /*inline*/
+    /*раньше был display: inline*/
+    display: flex;
+    margin-bottom: 0px;
 }
