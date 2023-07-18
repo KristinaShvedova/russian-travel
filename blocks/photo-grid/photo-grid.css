@@ -5,41 +5,36 @@
     grid-template-columns: repeat(4, 284px);
     /*отступы для колонок*/
     column-gap: 16px;
-    /*три ряда*/
-    /*удалить количество рядов grid-template-rows: repeat(3, 213px);*/
     /*отступы для рядов*/
     row-gap: 16px;
     /*ОШИБКА у последнего ряда занулить margin-bottom*/
     overflow: hidden;
 }
 
-@media screen and (max-width: 1260px) {
-    /*1200 вместо 1024*/
+@media screen and (max-width: 1250px) {
+    /*1250 вместо 1024*/
     .photo-grid {
         grid-template-columns: repeat(3, 300px);
-        /*удалить количество рядов grid-template-rows: repeat(4, 225px);*/
         column-gap: 14px;
         row-gap: 14px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    /*вместо 768 ставим 1000 */
+    /*вместо 768 ставим 1000*/
     .photo-grid {
         margin-top: 88px;
         grid-template-columns: repeat(2, 352px);
-        /*удалить количество рядов grid-template-rows: repeat(6, 264px);*/
         column-gap: 16px;
         row-gap: 16px;
     }
 }
 
-@media screen and (max-width: 750px) {
-    /*750 вместо 320*/
+@media screen and (max-width: 760px) {
+    /*760 вместо 320*/
     .photo-grid {
         margin-top: 64px;
         grid-template-columns: repeat(1, 288px);
-        /*удалить количество рядов grid-template-rows: repeat(12, 216px);*/
         column-gap: 16px;
         row-gap: 12px;
     }
