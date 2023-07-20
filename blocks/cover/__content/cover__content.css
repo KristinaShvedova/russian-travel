@@ -1,0 +1,30 @@
+/*стили для обёртки текста*/
+.cover__content {
+    display: flex;
+    flex-direction: column;
+    /*к паддингам обязательно бордер-бокс чтоб они считались к ширине блока*/
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 245px 312px 245px 312px;
+}
+ @media screen and (max-width: 1024px) {
+    .cover__content {
+        padding: 195px 232px 195px 232px;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    .cover__content {
+        padding: 115px 104px 115px 104px;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    /*600 вместо 320px*/
+    .cover__content {
+        max-width: 288px;
+        margin: 33px 16px 33px 16px;
+        padding: 0px;
+        min-height: 134px;
+    }
+ }
+    

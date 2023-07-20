@@ -3,42 +3,30 @@
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
     max-width: 560px;
-    padding: 245px 312px 0px 312px;
+    padding: 0px;
     margin: 0px;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-    line-height: 76px;
+    /*76 разделили на 72*/
+    line-height: 1.05;
     text-align: center;
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
+    /*мой промежуточный*/
     .cover__title {
-        padding-top: 195px;
-        padding-right: 232px;
-        padding-left: 232px;
+        max-width: 500px;
+        font-size: 50px;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .cover__title {
-        padding-top: 115px;
-        padding-right: 104px;
-        padding-left: 104px;
-    }
-}
-
 @media screen and (max-width: 320px) {
-
-    /*400 вместо 320*/
-    /*высота больше нужного из-за этого subtitle далеко стоит*/
     .cover__title {
         max-width: 288px;
-        padding-top: 33px;
-        padding-right: 16px;
-        padding-left: 16px;
+        min-height: 70px;
         font-size: 32px;
-        line-height: 35px;
+        /*36 разделили на 32*/
+        line-height: 1.09;
     }
 }

@@ -10,21 +10,21 @@
 </head>
 
 <body class="page">
-
+<!--
   <header class="header">
     <img class="header__logo" src="./images/header-logo.svg" alt="логотип коня">
     <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
     <a href="#" class="header__lang-link">En</a>
   </header>
 
-  <!-- если делаю списком, ссылки встают в 2 строки, display: inline не помогает
+ЕСЛИ делаю списком, ссылки встают в 2 строки, display: inline не помогает
     <ul class="header__links">
       <li><a href="#" class="header__lang-link">Ru</a></li>
       <li><a href="#" class="header__lang-link">En</a></li>sta
-    </ul> -->
+    </ul>
 
   <section class="lead">
-    <!-- тег <wbr> указывает браузеру место, где допускается делать перенос строки в тексте чтоб не было скролла -->
+    ТЕГ <wbr> указывает браузеру место, где допускается делать перенос строки в тексте чтоб не было СКРОЛЛА
     <h1 class="lead__title">Путе<wbr>шест<wbr>вия по Рос<wbr>сии</h1>
     <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
     <img class="lead__image" src="./images/lead-polka.jpg" alt="женщина на полке">
@@ -143,8 +143,7 @@
         <a href="http://vodlozero.ru/" class="place__link">http://vodlozero.ru/</a>
       </div>
       <img class="place__image" src="./images/place-karelia.jpg" alt="карелия">
-      <div class="place__paragraphs">
-      <!-- не понятно нужен он тут или нет -->
+      <div class="place__paragraphs"> НЕ ПОНЯТНО НУЖЕН ОН ТУТ ИЛИ НЕТ
         <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская
           лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских
           национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем
@@ -154,20 +153,25 @@
       </div>
     </div>
   </section>
+-->
 
-  <section class="cover">
+  <section class="cover"> <!-- z-index = 0 -->
     <!-- target="_blank" rel="noopener" после всего в cover__overlay стояло -->
-    <a href="https://stampsy.com/na-elektrichkah-do-baikala" class="cover__overlay">
-      <!-- тег <wbr> указывает браузеру место, где допускается делать перенос строки в тексте чтоб не было скролла -->
-      <h2 class="cover__title">До Бай<wbr>кала «на соба<wbr>ках»</h2>
-      <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.
-      </p>
+    <a href="https://stampsy.com/na-elektrichkah-do-baikala" class="cover__overlay"> <!-- z-index = 1 затемнение наслаивается на весь блок -->
+      <!-- чтобы работали паддинги обёртку сделали дополнительную-->
+      <div class="cover__content">
+        <!-- тег <wbr> указывает браузеру место, где допускается делать перенос строки в тексте чтоб не было скролла -->
+        <h2 class="cover__title">До Байкала «на собаках»</h2>
+        <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на
+          электричках.
+        </p>
+      </div>
     </a>
   </section>
 
+<!--
   <footer class="footer">
-    <!-- убрали обёртку
-    div class="footer__container"> </div>  -->
+  УБРАЛИ ОБЁРТКУ div class="footer__container"> </div>
     <nav class="footer__links">
       <a href="" class="footer__link" target="_blank">Карты</a>
       <a href="" class="footer__link" target="_blank">Погода</a>
@@ -177,7 +181,7 @@
     </nav>
     <p class="footer__author">© 2023. Шведова Кристина</p>
   </footer>
-
+-->
 </body>
 
 </html>

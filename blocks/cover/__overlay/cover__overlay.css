@@ -1,52 +1,78 @@
+/*стили для картинки*/
+
+/*ОШИБКА картинка разъезжается при сжатии*/
 .cover__overlay {
     background-image: url("../../../images/cover-trains.jpg");
+    /*чтоб не ломались пропорции картинки*/
     background-size: cover;
-    max-width: 1184px;
+    background-position: center;
+    /*секция динамически расширяться будет*/
+    width: 100%;
+    min-height: 740px;
     /*только благодаря AUTO margin-rigth и left картинка встала по центру*/
-    /*справа и слева по 48пх*/
-    margin: 92px auto 0px auto;
+    margin: 26px auto 0px auto; /*92 - 66 отступ у cover*/
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-decoration: none;
     /*пропорция картинки ширины к высоте*/
     aspect-ratio: 1.6;
     /*задали чтоб затемнение не перекрывало текст*/
-    z-index: 0;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
     .cover__overlay {
-        max-width: 1024px;
+        /*max-width: 1024px;*/
+        min-height: 640px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
+}
+
+/*только для пк*/
+.cover__overlay:hover::before {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
     .cover__overlay {
-        max-width: 768px;
+        /*max-width: 768px;*/
+        min-height: 480px;
+        /*90-66 отступ у cover*/
+        margin-top: 24px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover__overlay {
-        max-width: 320px;
+        /*max-width: 320px;*/
+        min-height: 200px;
     }
 }
-
+/*затемняшка*/
 .cover__overlay:before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /* тоже не нужно width: 100%;*/
+    /*из-за высоты height: 100% неправильной обрезается картинка плохо при сжатии*/
+    /*чтоб на всю секцию растянулся*/
     top: 0px;
+    right: 0px;
+    bottom: 0px;
     left: 0px;
-    opacity: 0.3;
     /*прозрачность*/
-    transition: 1s;
+    opacity: 0.3;
+    /*длительность*/
+    transition: 0.5s;
     background-color: #2A2C2F;
 }
-
+a:hover {
+    cursor: pointer;
+}
+/* вместо этого есть уже .cover__overlay:hover::before
 .cover__overlay:after {
     opacity: 0.8;
     background-color: #2A2C2F;
-}
+}*/

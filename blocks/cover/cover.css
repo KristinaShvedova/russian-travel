@@ -1,6 +1,13 @@
 .cover {
-    margin: 92px 0px 92px 0px;
-    max-width: 1280px;
+    /*отступы сверху и снизу с 320 разрешения взяты*/
+    margin: 66px auto 64px auto;
+    /*вместо 1280 ширины экрана ставим максимальную ширину контента 1184*/
+    max-width: 1184px;
+    /*flex для затемняшки*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -14,9 +21,6 @@
 @media screen and (max-width: 768px) {
     .cover {
         max-width: 768px;
-        margin-top: 90px;
-        margin-bottom: 48px;
-        /*88px - 40 нижний паддинг place__paragraphs*/
     }
 }
 

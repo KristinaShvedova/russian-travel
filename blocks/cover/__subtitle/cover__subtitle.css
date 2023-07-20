@@ -3,8 +3,10 @@
     /*если родитель - флексбокс z-index работает и без позиционирования*/
     z-index: 1;
     max-width: 360px;
-    /*412 по бокам*/
-    margin: 32px auto 245px auto;
+    /*ИСПОЛЬЗОВАТЬ ПАДДИНГИ ТК КОНТЕНТ ВНУТРИ РОДИТЕЛЬСКОГО БЛОКА*/
+    margin: 0px;
+    /*разница паддигов междy subtitle и content*/
+    padding: 32px 100px 0px 100px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -13,26 +15,13 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1024px) {
-    .cover__subtitle {
-        /*по бокам 332px;*/
-        margin-bottom: 195px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .cover__subtitle {
-        /*по бокам 204px;*/
-        margin-bottom: 115px;
-    }
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+    /*600 вместо 320*/
     .cover__subtitle {
         max-width: 288px;
-        /*по бокам по 16пх*/
-        margin: 16px auto 33px auto;
-        font-weight: 400;
+        padding-top: 16px;
+        padding-right: 0px;
+        padding-left: 0px;
         font-size: 14px;
         line-height: 16px;
     }
