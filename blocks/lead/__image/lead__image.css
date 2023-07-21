@@ -1,19 +1,16 @@
 .lead__image {
     position: relative;
     max-width: 984px;
-    margin-top: 64px;
-    margin-right: 148px;
-    margin-bottom: 0px;
-    margin-left: 148px;
+    margin: 0px;
+    /*148px - 48 у lead*/
+    padding: 64px 100px 0px 100px;
     /* через бэекграунд вставить картинку background: url(kalegin-michail-179870-unsplash.jpg);*/
 }
 
 @media screen and (max-width: 1024px) {
     .lead__image {
         max-width: 928px;
-        margin-top: 56px;
-        margin-right: 48px;
-        margin-left: 48px;
+        padding: 56px 0px 0px 0px;
     }
 }
 
@@ -28,6 +25,6 @@
 @media screen and (max-width: 320px) {
     .lead__image {
         max-width: 320px;
-        margin-top: 40px;
+        padding-top: 40px;
     }
 }

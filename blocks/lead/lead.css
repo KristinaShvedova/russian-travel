@@ -1,12 +1,29 @@
 .lead {
     display: flex;
     flex-direction: column;
-    /*от предыдущего блока header*/
-    margin-top: 56px;
+    justify-content: center;
+    /*1280 - отступы по 48*/
+    max-width: 1184px;
+    /*благодаря auto отступам все элементы блока центрировались*/
+    margin: 56px auto 0px auto;
 }
 
 @media screen and (max-width: 1024px) {
     .lead {
         margin-top: 48px;
+        /*1024 - отступы по 48*/
+        max-width: 928px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .lead {
+        /*не писать отступы по 24 у картинки их нет*/
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .lead {
+        /*не писать отступы по 16 у картинки их нет*/
+        max-width: 320px;
     }
 }
