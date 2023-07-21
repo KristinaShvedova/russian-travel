@@ -1,40 +1,26 @@
 .place__image {
     max-width: 460px;
-    margin-top: 48px;
     /*у всех карточек расстояние снизу от текста до фотки*/
-    margin-bottom: 0px;
-    margin-left: 148px;
+    padding: 48px 0px 0px 0px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     /*1100 вместо 1024*/
     .place__image {
         max-width: 440px;
-        margin-left: 48px;
     }
 }
-
-@media screen and (max-width: 900px) {
-    /*900 вместо 768*/
+@media screen and (max-width: 950px) {
+    /*950 вместо 768*/
     .place__image {
         max-width: 340px;
-        margin-left: 24px;
-    }
-}@media screen and (max-width: 750px) {
-    /*мой промежуточный*/
-    .place__image {
-        max-width: 330px;
-        margin-top: 32px;
-        margin-right: 0px;
-        margin-left: 0px;
     }
 }
-@media screen and (max-width: 500px) {
-    /*500 вместо 320*/
+@media screen and (max-width: 400px) {
+    /*400 вместо 320*/
     .place__image {
-        max-width: 320px;
-        margin-top: 32px;
-        margin-right: 0px;
-        margin-left: 0px;
+        /*если стоит 320 то скролл*/
+        max-width: 288px;
+        padding: 32px 0px 0px 0px;
     }
 }

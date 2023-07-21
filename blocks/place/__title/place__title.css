@@ -1,38 +1,31 @@
 .place__title {
-    /*не понимаю, как сделать у 2, 3 и 5ого элемента высоту 76 не помогает nth-of-type ОШИБКА*/
-    /*position: relative;*/
     display: flex;
-    flex-direction: column-reverse;
     /*текст внизу строки*/
+    flex-direction: column-reverse;
     max-width: 460px;
-    margin-top: 80px;
+    margin: 0px;
     /*у всех карточек расстояние между карточкой сверху и следующим названием 80px*/
-    margin-bottom: 0px;
-    margin-left: 148px;
+    padding: 80px 0px 0px 0px;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    /* or 106% */
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     /*1100 вместо 1024*/
     .place__title {
         max-width: 440px;
-        margin-left: 48px;
     }
 }
 
-@media screen and (max-width: 960px) {
-    /*920 вместо 768*/
+@media screen and (max-width: 950px) {
+    /*950 вместо 768*/
     .place__title {
         max-width: 340px;
-        /*ОШИБКА дефтулзы показывают 330пх*/
-        margin-top: 76px;
-        /*88-12 что стоят в margin-top places*/
-        margin-left: 24px;
+        /*88 - 12пх отступ сверху в places*/
+        padding-top: 76px;
         font-size: 42px;
         line-height: 46px;
         letter-spacing: 0em;
@@ -41,14 +34,12 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 320px) {
     /*520 вместо 320*/
     .place__title {
         max-width: 288px;
-        margin-top: 50px;
         /*во всех карточках после 1ой маржин 50*/
-        margin-right: 16px;
-        margin-left: 16px;
+        padding: 50px 0px 0px 0px;
         line-height: 35px;
         font-size: 32px;
     }

@@ -1,14 +1,10 @@
 .place__link {
     position: relative;
     max-width: 456px;
-    padding-top: 12px;
-    /*222 по макету - 12пх из places*/
-    /*margin-right: 176px; когда псевдокласс делаю для отступа 110пх не работает*/
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
     text-decoration-line: underline;
     color: #FFFFFF;
 }

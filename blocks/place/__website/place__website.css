@@ -1,59 +1,29 @@
 .place__website {
     position: relative;
     max-width: 456px;
-    /*484px*/
-    margin-top: 186px;
-    /*198пх - 12пх и 110-12пх в places*/
-    margin-right: 176px;
-    /*если маржин левый удалить, встает ровно, не выходя за блок*/
-    margin-bottom: 0px;
+    /*198пх - 92пх*/
+    padding: 106px 0px 0px 0px;
+    margin: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     /*1200 вместо 1024*/
     .place__website {
-        margin-right: 48px;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    /*1000 вместо 768*/
+@media screen and (max-width: 950px) {
+    /*950 вместо 768*/
     .place__website {
-        margin-top: 134px;
-        margin-right: 24px;
-        /*маржин выпирает за грань блока*/
+        /*134 отступ - 88 отступ у title*/
+        padding-top: 46px;
         max-width: 352px;
     }
 }
-@media screen and (max-width: 750px) {
-    /*мой промежуточный*/
-    /*меньше 600px все равно торчит сбоку*/
+@media screen and (max-width: 600px) {
+    /*600 вместо 320*/
     .place__website {
-        margin-top: 74px;
-        padding-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
-        max-width: 230px;
-    }
-}
-@media screen and (max-width: 490px) {
-    /*мой промежуточный*/
-    .place__website {
-        margin-top: 74px;
-        padding-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
-        max-width: 150px;
-    }
-}
-@media screen and (max-width: 320px) {
-    /*330 вместо 320*/
-    /*на 326px все равно торчит сбоку*/
-    .place__website {
-        margin-top: 0px;
-        padding-top: 32px;
-        margin-right: 16px;
-        margin-left: 16px;
+        padding-top: 32px 0px 0px 0px;
         max-width: 288px;
     }
 }

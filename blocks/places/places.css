@@ -1,17 +1,28 @@
 .places {
-    max-width: 1280px;
-    margin-top: 12px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
+    /*max ширина контента*/
+    max-width: 1184px;
+    margin: 12px auto 0px auto;
     padding: 0px;
     /*color: #FFFFFF;*/
     box-sizing: border-box;
 }
-
+@media screen and (max-width: 1024px) {
+    .places {
+        /*макс ширина контента ширина кэрана - отступы*/
+        max-width: 928px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .places {
+        /*макс ширина контента*/
+        max-width: 720px;
+    }
+}
 @media screen and (max-width: 320px) {
     .places {
+        /*320 - отступы по 16*/
+        max-width: 288px;
+        /*64 - 50 у title*/
         margin-top: 14px;
-        /*64 - 50пх*/
     }
 }

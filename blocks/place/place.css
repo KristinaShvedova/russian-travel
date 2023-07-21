@@ -1,6 +1,8 @@
 .place {
     margin: 0px;
-    padding: 0px;
+    /*отступы у всего контейнера*/
+    /*1280 - у places ширина 1184 = 96пх отступы по 48 а там по 148 поэтому + 100*/
+    padding: 0px 100px 0px 100px;
     display: grid;
     /*создали 2 колонки*/
     grid-template-columns: 47% 53%;
@@ -10,6 +12,7 @@
 }
 @media screen and (max-width: 1024px) {
     .place {
+        padding: 0px;
         grid-column-gap: 32px;
     }
 }
@@ -18,9 +21,9 @@
         grid-column-gap: 28px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 740px) {
+    /*740 чтоб не было скролла*/
     .place {
         grid-template-columns: none;
-        /*тогда плывет текст в остальных версиях*/
     }
 }
