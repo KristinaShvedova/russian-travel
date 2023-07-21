@@ -1,5 +1,7 @@
 .photo-grid {
-    margin: 92px 0px 0px 0px;
+    /*max ширина контента 1280 - отступы по 48*/
+    max-width: 1184px;
+    margin: 92px auto 0px auto;
     display: grid;
     /*создали 4 колонки*/
     grid-template-columns: repeat(4, 284px);
@@ -9,11 +11,14 @@
     row-gap: 16px;
     /*ОШИБКА у последнего ряда занулить margin-bottom*/
     overflow: hidden;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1250px) {
     /*1250 вместо 1024*/
     .photo-grid {
+        /*1024 - отступы по 48*/
+        max-width: 928px;
         grid-template-columns: repeat(3, 300px);
         column-gap: 14px;
         row-gap: 14px;
