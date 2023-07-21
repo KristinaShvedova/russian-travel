@@ -1,47 +1,45 @@
 .footer__author {
-    /*поднять на уровень с ссылками ОШИБКА*/
     display: flex;
-    max-width: 186px;
-    /* нужно удалить height: 16px;*/
-    margin: 0px 0px 0px 998px;
-    /*998px = 1046px - 48px; даже если поставить 533пх не встает в один ряд с ссылками ОШИБКА*/
+    /*фраза встала в одну строку*/
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px 0px 0px 533px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    text-align: right;
+    text-align: left;
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1250px) {
-    /*1200 вместо 1024*/
+@media screen and (max-width: 1200px) {
     .footer__author {
-        margin-left: 742px;
-        /*790 - 48*/
+        /*мой промежуточный*/
+        padding-left: 350px;
     }
 }
-@media screen and (max-width: 1150px) {
-    /*мой промежуточный*/
+@media screen and (max-width: 1024px) {
     .footer__author {
-        margin-left: 620px;
-        /*790 - 48*/
+        padding-left: 277px;
     }
 }
-@media screen and (max-width: 1000px) {
-    /*1000 вместо 768*/
-    /*ОШИБКА встает под link*/
+@media screen and (max-width: 950px) {
     .footer__author {
-        margin-left: 558px;
-        /*вышел за грань блока*/
+        /*мой промежуточный*/
+        padding-left: 100px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .footer__author {
+        padding-left: 69px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    /*700 вместо 320*/
+@media screen and (max-width: 320px) {
     .footer__author {
-        margin-top: 48px;
-        margin-bottom: 24px;
-        margin-left: 16px;
+        max-width: 186px;
+        padding: 48px 0px 0px 0px;
         font-size: 14px;
         line-height: 14px;
     }
