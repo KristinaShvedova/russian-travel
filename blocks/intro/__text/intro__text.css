@@ -1,8 +1,9 @@
 .intro__text {
     position: relative;
     max-width: 690px;
-    margin-top: 40px;
-    margin-left: 148px;
+    margin: 0px;
+    /*max ширина контента 1280 - 1184 это отступы по 48 пх а надо 148 поэтому + 100пх*/
+    padding: 40px 0px 0px 100px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -12,21 +13,21 @@
 
 @media screen and (max-width: 1024px) {
     .intro__text {
-        margin-left: 48px;
+        padding-left: 48px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .intro__text {
         max-width: 720px;
-        margin-left: 24px;
+        padding-left: 24px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .intro__text {
-        margin-top: 40px;
-        margin-left: 16px;
+        padding-top: 40px;
+        padding-left: 16px;
         max-width: 288px;
     }
 }

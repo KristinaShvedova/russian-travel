@@ -1,11 +1,10 @@
 .intro__list {
-    /*цифры не должны быть жирные ОШИБКА*/
     position: relative;
     max-width: 690px;
     min-height: 90px;
-    padding: 0px;
-    margin-top: 33px;
-    margin-left: 148px;
+    margin: 0px;
+    /*max ширина контента 1280 - 1184 это отступы по 48 пх а надо 148 поэтому + 100пх*/
+    padding: 33px 0px 0px 100px;
     margin-bottom: 0px;
     font-style: normal;
     font-weight: 700;
@@ -17,20 +16,20 @@
 
 @media screen and (max-width: 1024px) {
     .intro__list {
-        margin-left: 48px;
+        padding-left: 48px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .intro__list {
-        margin-left: 24px;
+        padding-left: 24px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .intro__list {
         max-width: 288px;
-        margin-top: 34px;
-        margin-left: 16px;
+        padding-top: 34px;
+        padding-left: 16px;
     }
 }

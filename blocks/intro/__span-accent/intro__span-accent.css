@@ -1,18 +1,13 @@
-/*написать стили для цифр*/
 .intro__span-accent {
-    /*цифры не должны быть жирные ОШИБКА*/
     position: relative;
     max-width: 690px;
     max-height: 90px;
     padding: 0px;
-    margin-top: 33px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     font-style: normal;
-    font-weight: 400; /*у слов 700 у цифр 400*/
+    font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;
     list-style: none;
 }
-/* media потом сделать для разных расщирений*/

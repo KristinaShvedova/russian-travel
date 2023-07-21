@@ -1,8 +1,9 @@
 .intro__title {
     position: relative;
     max-width: 690px;
-    margin-top: 92px;
-    margin-left: 148px;
+    margin: 0px;
+    /*max ширина контента 1280 - 1184 это отступы по 48 пх а надо 148 поэтому + 100пх*/
+    padding: 92px 0px 0px 100px;
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
@@ -12,23 +13,23 @@
 
 @media screen and (max-width: 1024px) {
     .intro__title {
-        margin-left: 48px;
+        padding-left: 48px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .intro__title {
         max-width: 720px;
-        margin-top: 88px;
-        margin-left: 24px;
+        padding-top: 88px;
+        padding-left: 24px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .intro__title {
         max-width: 288px;
-        margin-top: 64px;
-        margin-left: 16px;
+        padding-top: 64px;
+        padding-left: 16px;
         font-size: 32px;
         line-height: 35px;
     }
