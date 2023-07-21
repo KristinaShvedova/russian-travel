@@ -1,6 +1,27 @@
 header {
-    max-width: 1280px;
-    /*раньше был display: inline*/
+    /*1280 - отступы по 48*/
+    max-width: 1184px;
     display: flex;
-    margin-bottom: 0px;
+    margin: 0px auto;
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        /*1024 - отступы по 48*/
+        max-width: 928px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .header {
+        /*768 - отступы по 24*/
+        max-width: 720px;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .header {
+        /*320 - отступы по 16*/
+        max-width: 288px;
+    }
+    
 }

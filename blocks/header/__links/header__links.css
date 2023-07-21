@@ -1,7 +1,27 @@
-/*.header__links {
-    display: inline;
+.header__links {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}*/
+    margin: 0px;
+    padding: 46px 0px 0px 931px;
+}
+
+@media screen and (max-width: 1200px) {
+    /*1200 вместо 1024*/
+    .header__links {
+        padding-left: 675px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    /*1000 вместо 768*/
+    .header__links {
+        padding-left: 467px;
+    }
+}
+@media screen and (max-width: 730px) {
+    /*730 вместо 320*/
+    .header__links {
+        padding-left: 84px;
+        padding-top: 30px;
+    }
+}
