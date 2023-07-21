@@ -19,7 +19,8 @@
         transition: 1s;
     }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
+    /*370 вместо 320*/
     .header__lang-link {
         max-width: 22px;
         font-size: 18px;

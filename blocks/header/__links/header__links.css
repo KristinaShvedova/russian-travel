@@ -18,8 +18,8 @@
         padding-left: 467px;
     }
 }
-@media screen and (max-width: 730px) {
-    /*730 вместо 320*/
+@media screen and (max-width: 750px) {
+    /*760 вместо 320*/
     .header__links {
         padding-left: 84px;
         padding-top: 30px;
